@@ -1,0 +1,10 @@
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\bin\Debug\CriacaoDataLake.dacpac
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\bin\Debug\CriaçãoDataLake.dll
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\bin\Debug\CriaçãoDataLake.pdb
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\CriacaoDataLake.sqlproj.AssemblyReference.cache
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\Model.xml
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\refactor.xml
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\postdeploy.sql
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\predeploy.sql
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\CriaçãoDataLake.dll
+C:\Fontes\Projetos_visual_studio\versao002\DataWarehouseAtacaDez\CriaçãoDataLake\obj\Debug\CriaçãoDataLake.pdb
