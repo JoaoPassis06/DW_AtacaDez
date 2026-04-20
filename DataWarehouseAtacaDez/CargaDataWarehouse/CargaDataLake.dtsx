@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDataLake"
   DTS:PackageType="5"
-  DTS:VersionBuild="88"
-  DTS:VersionGUID="{3B52E3BD-13E7-46C8-847A-8E860A3DA9D9}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{D9F18F02-5FC5-48F6-B1DA-56B1448BA2A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Fontes\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -45,7 +45,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Fontes\DATA\FATOS\COMPRAS\IN\Compras_202101.csv">
+          DTS:ConnectionString="C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\COMPRAS\IN\Compras_202101.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Fontes\DATA\DIMENSOES\CLIENTE\IN\REGIOES DOS ESTADOS.csv">
+          DTS:ConnectionString="C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\CLIENTE\IN\REGIOES DOS ESTADOS.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTADO ABREVIAÇÃO"
-              DTS:DTSID="{7E0D0FC5-E1D0-4869-85C4-FA211A1932E9}"
+              DTS:DTSID="{B2A678BE-07F6-4CEC-92AD-BB2842BCE2A7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTADO"
-              DTS:DTSID="{74E44A98-9C71-42B3-8939-65C40F12BEE4}"
+              DTS:DTSID="{5C6C9BEF-BE94-413C-B690-1FEAA718842D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="REGIAO"
-              DTS:DTSID="{60643CA7-D6D0-4FD2-961B-30762D40F7B0}"
+              DTS:DTSID="{623B748B-42FB-4DC1-B10E-1C0AAA28605C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -155,7 +155,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Fontes\DATA\FATOS\NOTAS\IN\Movimento_Itens_2021_01.csv">
+          DTS:ConnectionString="C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\IN\Movimento_Itens_2021_01.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Fontes\DATA\DIMENSOES\EMPRESA\IN\EMPRESA.CSV">
+          DTS:ConnectionString="C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\EMPRESA\IN\EMPRESA.CSV">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -221,7 +221,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LOJA"
-              DTS:DTSID="{DB3EA79D-2FCD-4118-A267-9795933A3EC3}"
+              DTS:DTSID="{82393C0C-D5F3-454B-9957-A741AEF96588}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="NOME_LOJA"
-              DTS:DTSID="{4ED53A8D-23C9-434C-8060-A6FA77FFB518}"
+              DTS:DTSID="{FD2AB7D2-4A40-4A9C-9E91-BA12BA9C733F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EMPRESA"
-              DTS:DTSID="{05F24313-7300-41F1-86EF-E7958734AC53}"
+              DTS:DTSID="{3C3C0749-9234-4276-8935-E531C80D5128}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CNPJ"
-              DTS:DTSID="{6D8109C2-0D4D-4E3C-AAF3-A5F7AA30C556}"
+              DTS:DTSID="{FAA3A7B0-CD2D-46D0-AE73-7673DFFAC009}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TAMANHO"
-              DTS:DTSID="{CCB07FAA-4C79-4A04-8676-AAB10F10BCD6}"
+              DTS:DTSID="{F708F26F-0DB0-4145-A351-2D55502495A1}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -280,7 +280,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Fontes\DATA\FATOS\NOTAS\IN\Movimento_Notas_2021_01.csv">
+          DTS:ConnectionString="C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\IN\Movimento_Notas_2021_02.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cpf"
-              DTS:DTSID="{7FF1AF5A-41DB-4777-9FDC-B22E9EBF2D54}"
+              DTS:DTSID="{16B9278C-9FB7-40B0-B755-997F7B8B3C2B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="codigo_loja"
-              DTS:DTSID="{70CB850B-CD90-4B6C-BC21-E52BD4359C87}"
+              DTS:DTSID="{9456B07C-2E18-4E36-A258-D5C7EF1CFAB5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="data"
-              DTS:DTSID="{E11D0320-962C-4861-9A78-A42F8A033E43}"
+              DTS:DTSID="{35CFEF25-A96F-4D9B-957C-43517A37BE4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="numero"
-              DTS:DTSID="{F65C7DBC-8ABD-44DA-A9CE-5A685658DED9}"
+              DTS:DTSID="{C8467055-C0B2-40D9-88AD-3C60CBCC0B7E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -337,7 +337,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Fontes\DATA\FATOS\NOTAS\OUT\Movimento_Notas_2021_01.csv">
+          DTS:ConnectionString="C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\OUT\Movimento_Notas_2021_02.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -346,7 +346,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cpf"
-              DTS:DTSID="{03127430-C69E-4B56-B24B-2F57B9B8D000}"
+              DTS:DTSID="{68D7C6BB-55FB-47E9-B402-074705EC6297}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +355,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="codigo_loja"
-              DTS:DTSID="{40E3D932-1694-449C-A195-907C79A5E368}"
+              DTS:DTSID="{8D66E725-B531-4499-881B-656021331EBE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -364,7 +364,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="data"
-              DTS:DTSID="{97AACBBB-6DEF-4B3A-B046-58D3D80ABE34}"
+              DTS:DTSID="{1931CF0D-AE33-4DC0-B667-1E4C9D1744D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -373,7 +373,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="numero"
-              DTS:DTSID="{B474ED04-1C57-43A3-A61D-347B1B4A7ED0}"
+              DTS:DTSID="{5330BD98-E352-4C4A-9EB7-6D86652D944E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -388,7 +388,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Arquivo_Compra">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\COMPRAS\IN\Compras_202101.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\COMPRAS\IN\Compras_202101.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -399,7 +399,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Arquivo_Compra_Destino">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\COMPRAS\OUT\Compras_202101.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\COMPRAS\OUT\Compras_202101.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -408,7 +408,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Arquivo_Item">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\NOTAS\IN\Movimento_Itens_2021_01.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\IN\Movimento_Itens_2021_01.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -419,7 +419,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Arquivo_Item_Destino">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\NOTAS\OUT\Movimento_Itens_2021_01.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\OUT\Movimento_Itens_2021_01.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -428,7 +428,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Arquivo_Notas">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\NOTAS\IN\Movimento_Notas_2021_01.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\IN\Movimento_Notas_2021_02.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -439,7 +439,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Arquivo_Nota_Destino">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\NOTAS\OUT\Movimento_Notas_2021_01.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\OUT\Movimento_Notas_2021_02.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -448,7 +448,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Diretorio_Destino">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\NOTAS\OUT</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\OUT</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -457,7 +457,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Diretório_Destino_Compra">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\COMPRAS\OUT</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\COMPRAS\OUT</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -466,7 +466,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Diretório_Destino_Item">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Fontes\DATA\FATOS\NOTAS\OUT</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\OUT</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -499,7 +499,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Nome_Arquivo_Nota">
       <DTS:VariableValue
-        DTS:DataType="8">Movimento_Notas_2021_01 CSV</DTS:VariableValue>
+        DTS:DataType="8">Movimento_Notas_2021_02 CSV</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -5793,7 +5793,7 @@
                   dataType="System.String"
                   description="Os dados XML foram usados pelo adaptador de origem XML."
                   expressionType="Notify"
-                  name="XMLData">C:\Fontes\DATA\DIMENSOES\PRODUTO\IN\FORNECEDORES.XML</property>
+                  name="XMLData">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\PRODUTO\IN\FORNECEDORES.XML</property>
                 <property
                   dataType="System.String"
                   description="A variável foi usada pelo adaptador de origem XML para especificar os dados XML."
@@ -5806,7 +5806,7 @@
                   dataType="System.String"
                   description="A definição de esquema XML foi usada pelo adaptador de origem XML."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">C:\Fontes\DATA\DIMENSOES\PRODUTO\IN\FORNECEDORES.xsd</property>
+                  name="XMLSchemaDefinition">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\PRODUTO\IN\FORNECEDORES.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifica se um esquema embutido deve ou não ser usado."
@@ -10104,13 +10104,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Carga de Produtos"
           TopLeft="41.171428621606,81.0588234583606" />
         <NodeLayout
-          Size="359.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Movendo arquivo do diretório IN para diretório OUT - Notas"
-          TopLeft="6.2142857158062,124.976470226947" />
+          Size="164.8,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras"
+          TopLeft="96.6857145289985,30.1176469623009" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="359.2,155.2"
+          Size="359.2,198.4"
+          Id="Package\Verificando diretório IN de COMPRAS"
+          TopLeft="21.4285714741873,763.552940772953" />
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas"
+          TopLeft="64.9632655363737,16.0638654150325" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="324.8,157.6"
+          Size="324.8,200.8"
+          Id="Package\Verificando diretório IN de ITENS"
+          TopLeft="42.8571429483744,490.672268828085" />
         <NodeLayout
           Size="184.8,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais"
           TopLeft="91.9428572857864,8.1411762909494" />
+        <NodeLayout
+          Size="359.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Movendo arquivo do diretório IN para diretório OUT - Notas"
+          TopLeft="6.2142857158062,124.976470226947" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de NOTAS.PrecedenceConstraints[Restrição]"
           TopLeft="185.078571500796,49.7411762909494">
@@ -10140,28 +10162,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Size="369.6,259.2"
           Id="Package\Verificando diretório IN de NOTAS"
           TopLeft="13.1428570516255,141.117646882536" />
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras"
-          TopLeft="96.6857145289985,30.1176469623009" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="359.2,155.2"
-          Size="359.2,198.4"
-          Id="Package\Verificando diretório IN de COMPRAS"
-          TopLeft="21.4285714741873,763.552940772953" />
-        <NodeLayout
-          Size="192.8,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas"
-          TopLeft="64.9632655363737,16.0638654150325" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="324.8,157.6"
-          Size="324.8,200.8"
-          Id="Package\Verificando diretório IN de ITENS"
-          TopLeft="42.8571429483744,490.672268828085" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10718,9 +10718,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10742,9 +10740,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10766,9 +10762,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10944,6 +10938,630 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Carga de Produtos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="202.4,41.6"
+          Id="Package\Carga de Produtos\Junção dados JSON e XML"
+          TopLeft="339.7,310.3" />
+        <NodeLayout
+          Size="332,41.6"
+          Id="Package\Carga de Produtos\Gravação de dados na tabela PRODUTO do Data Lake"
+          TopLeft="274.9,615.1" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Carga de Produtos\Comando OLE DB 1"
+          TopLeft="582.3,716.7" />
+        <NodeLayout
+          Size="284.8,41.6"
+          Id="Package\Carga de Produtos\Conexão com arquivo FORNECEDORES XML"
+          TopLeft="5.49999999999997,5.49999999999995" />
+        <NodeLayout
+          Size="268.8,41.6"
+          Id="Package\Carga de Produtos\Conexão com o arquivo PRODUTO JSON"
+          TopLeft="306.5,107.1" />
+        <NodeLayout
+          Size="196,41.6"
+          Id="Package\Carga de Produtos\Conversão de dados SKU"
+          TopLeft="49.9,107.1" />
+        <NodeLayout
+          Size="191.2,41.6"
+          Id="Package\Carga de Produtos\Classificar SKU do JSON"
+          TopLeft="345.3,208.7" />
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\Carga de Produtos\Classifcar SKU do XML"
+          TopLeft="101.3,208.7" />
+        <NodeLayout
+          Size="262.4,41.6"
+          Id="Package\Carga de Produtos\Conversão de colunas para PRODUTOS"
+          TopLeft="309.7,513.5" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Carga de Produtos\Inserir Destino"
+          TopLeft="152.3,716.7" />
+        <NodeLayout
+          Size="255.2,41.6"
+          Id="Package\Carga de Produtos\Acrescentando colunas do Metadados"
+          TopLeft="313.3,411.9" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Carga de Produtos\Comando OLE DB"
+          TopLeft="360.1,716.7" />
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Classificar Saída]"
+          TopLeft="192.9,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="215.6,59.9999999999999"
+              Start="0,0"
+              End="215.6,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7176470588235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7176470588235"
+                    Point2="0,35.7176470588235"
+                    Point3="4,35.7176470588235" />
+                  <mssgle:LineSegment
+                    End="211.6,35.7176470588235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="211.6,35.7176470588235"
+                    Point2="215.6,35.7176470588235"
+                    Point3="215.6,39.7176470588235" />
+                  <mssgle:LineSegment
+                    End="215.6,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Saída de Conversão de Dados1]"
+          TopLeft="440.9,555.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Saída de Conversão de Dados]"
+          TopLeft="147.9,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45,59.9999999999999"
+              Start="0,0"
+              End="45,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9999999999999"
+                    Point2="0,29.9999999999999"
+                    Point3="4,29.9999999999999" />
+                  <mssgle:LineSegment
+                    End="41,29.9999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41,29.9999999999999"
+                    Point2="45,29.9999999999999"
+                    Point3="45,33.9999999999999" />
+                  <mssgle:LineSegment
+                    End="45,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Saída de Coluna Derivada]"
+          TopLeft="440.9,453.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000002"
+              Start="0,0"
+              End="0,52.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="440.9,656.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="521.9,656.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="146,60"
+              Start="0,0"
+              End="146,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3187250996016" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3187250996016"
+                    Point2="0,20.3187250996016"
+                    Point3="4,20.3187250996016" />
+                  <mssgle:LineSegment
+                    End="142,20.3187250996016" />
+                  <mssgle:CubicBezierSegment
+                    Point1="142,20.3187250996016"
+                    Point2="146,20.3187250996016"
+                    Point3="146,24.3187250996016" />
+                  <mssgle:LineSegment
+                    End="146,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-30.3626953125,25.3187250996016,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Saída da Junção de Mesclagem]"
+          TopLeft="440.9,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Produto]"
+          TopLeft="147.9,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Output0]"
+          TopLeft="440.9,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Nova Saída]"
+          TopLeft="359.9,656.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-134,60"
+              Start="0,0"
+              End="-134,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3187250996016" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3187250996016"
+                    Point2="0,20.3187250996016"
+                    Point3="-4,20.3187250996016" />
+                  <mssgle:LineSegment
+                    End="-130,20.3187250996016" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-130,20.3187250996016"
+                    Point2="-134,20.3187250996016"
+                    Point3="-134,24.3187250996016" />
+                  <mssgle:LineSegment
+                    End="-134,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-91.993359375,25.3187250996016,49.98671875,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de Produtos.Paths[Classificar Saída1]"
+          TopLeft="440.9,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.4,59.9999999999999"
+              Start="0,0"
+              End="32.4,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7176470588235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7176470588235"
+                    Point2="0,35.7176470588235"
+                    Point3="4,35.7176470588235" />
+                  <mssgle:LineSegment
+                    End="28.4,35.7176470588235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.4,35.7176470588235"
+                    Point2="32.4,35.7176470588235"
+                    Point3="32.4,39.7176470588235" />
+                  <mssgle:LineSegment
+                    End="32.4,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga de Produtos\Gravação de dados na tabela PRODUTO do Data Lake">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{4FC76E1C-5DA3-4825-930C-77581436F42D}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[tbl_produto]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de colunas para PRODUTOS.Saídas[Saída de Conversão de Dados].Colunas[ARQUIVO_ORIGEM_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;arquivo_origem&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[unidade]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;atr_unidade_medida&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de colunas para PRODUTOS.Saídas[Saída de Conversão de Dados].Colunas[CNPJ_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;cod_fornecedor&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[SKU_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;cod_produto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Acrescentando colunas do Metadados.Saídas[Saída de Coluna Derivada].Colunas[DATA_CARGA]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;data_carga&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[departamento]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;desc_departamento&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de colunas para PRODUTOS.Saídas[Saída de Conversão de Dados].Colunas[FORNECEDOR_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;desc_fornecedor&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[descritor]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;desc_produto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Inserir Destino&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Verificando diretório IN de COMPRAS\Carga de Compras">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="252,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Conexão com arquivo COMPRAS CSV"
+          TopLeft="153.999997705221,75.9999988675117" />
+        <NodeLayout
+          Size="241.6,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Acrescentar colunas de Metadados"
+          TopLeft="133.999998003244,197.99999704957" />
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="279.999997705221,117.599998867512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-25.1999997019769,80.3999981820584"
+              Start="0,0"
+              End="-25.1999997019769,72.8999981820584">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.1999990910292" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.1999990910292"
+                    Point2="0,40.1999990910292"
+                    Point3="-4,40.1999990910292" />
+                  <mssgle:LineSegment
+                    End="-21.1999997019769,40.1999990910292" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.1999997019769,40.1999990910292"
+                    Point2="-25.1999997019769,40.1999990910292"
+                    Point3="-25.1999997019769,44.1999990910292" />
+                  <mssgle:LineSegment
+                    End="-25.1999997019769,72.8999981820584" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Coluna Derivada"
+          TopLeft="164.999997541308,308.999995395541" />
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Coluna Derivada]"
+          TopLeft="254.799998003244,239.59999704957">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.2000004619359,69.3999983459711"
+              Start="0,0"
+              End="-12.2000004619359,61.8999983459711">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.6999991729856" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.6999991729856"
+                    Point2="0,34.6999991729856"
+                    Point3="-4,34.6999991729856" />
+                  <mssgle:LineSegment
+                    End="-8.20000046193587,34.6999991729856" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.20000046193587,34.6999991729856"
+                    Point2="-12.2000004619359,34.6999991729856"
+                    Point3="-12.2000004619359,38.6999991729856" />
+                  <mssgle:LineSegment
+                    End="-12.2000004619359,61.8999983459711" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-14.1000002309679,39.6999991729856,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="205.6,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Origem de Arquivo Simples"
+          TopLeft="133.999998003244,47.9999992847443" />
+        <NodeLayout
+          Size="241.6,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Acrescentar colunas de Metadados"
+          TopLeft="156.999997660518,137.99999794364" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Coluna Derivada"
+          TopLeft="187.999997198582,259.999996125698" />
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="236.799998003244,89.5999992847443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.9999996572733,48.3999986588955"
+              Start="0,0"
+              End="40.9999996572733,40.8999986588955">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1999993294478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.1999993294478"
+                    Point2="0,24.1999993294478"
+                    Point3="4,24.1999993294478" />
+                  <mssgle:LineSegment
+                    End="36.9999996572733,24.1999993294478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.9999996572733,24.1999993294478"
+                    Point2="40.9999996572733,24.1999993294478"
+                    Point3="40.9999996572733,28.1999993294478" />
+                  <mssgle:LineSegment
+                    End="40.9999996572733,40.8999986588955" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Coluna Derivada]"
+          TopLeft="277.799997660518,179.59999794364">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.200000461936,80.3999981820583"
+              Start="0,0"
+              End="-12.200000461936,72.8999981820583">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.1999990910292" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.1999990910292"
+                    Point2="0,40.1999990910292"
+                    Point3="-4,40.1999990910292" />
+                  <mssgle:LineSegment
+                    End="-8.20000046193599,40.1999990910292" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.20000046193599,40.1999990910292"
+                    Point2="-12.200000461936,40.1999990910292"
+                    Point3="-12.200000461936,44.1999990910292" />
+                  <mssgle:LineSegment
+                    End="-12.200000461936,72.8999981820583" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-14.100000230968,45.1999990910292,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais">
     <LayoutInfo>
@@ -11143,6 +11761,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Inserir Destino">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Dimensão de Alteração Lenta">
     <Properties>
       <Property>
@@ -11210,645 +11841,5 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Carga de Produtos">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="202.4,41.6"
-          Id="Package\Carga de Produtos\Junção dados JSON e XML"
-          TopLeft="339.7,310.3" />
-        <NodeLayout
-          Size="332,41.6"
-          Id="Package\Carga de Produtos\Gravação de dados na tabela PRODUTO do Data Lake"
-          TopLeft="274.9,615.1" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga de Produtos\Comando OLE DB 1"
-          TopLeft="582.3,716.7" />
-        <NodeLayout
-          Size="284.8,41.6"
-          Id="Package\Carga de Produtos\Conexão com arquivo FORNECEDORES XML"
-          TopLeft="5.49999999999997,5.49999999999995" />
-        <NodeLayout
-          Size="268.8,41.6"
-          Id="Package\Carga de Produtos\Conexão com o arquivo PRODUTO JSON"
-          TopLeft="306.5,107.1" />
-        <NodeLayout
-          Size="196,41.6"
-          Id="Package\Carga de Produtos\Conversão de dados SKU"
-          TopLeft="49.9,107.1" />
-        <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\Carga de Produtos\Classificar SKU do JSON"
-          TopLeft="345.3,208.7" />
-        <NodeLayout
-          Size="183.2,41.6"
-          Id="Package\Carga de Produtos\Classifcar SKU do XML"
-          TopLeft="101.3,208.7" />
-        <NodeLayout
-          Size="262.4,41.6"
-          Id="Package\Carga de Produtos\Conversão de colunas para PRODUTOS"
-          TopLeft="309.7,513.5" />
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Carga de Produtos\Inserir Destino"
-          TopLeft="152.3,716.7" />
-        <NodeLayout
-          Size="255.2,41.6"
-          Id="Package\Carga de Produtos\Acrescentando colunas do Metadados"
-          TopLeft="313.3,411.9" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Carga de Produtos\Comando OLE DB"
-          TopLeft="360.1,716.7" />
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Classificar Saída]"
-          TopLeft="192.9,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="215.6,59.9999999999999"
-              Start="0,0"
-              End="215.6,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.7176470588235" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7176470588235"
-                    Point2="0,35.7176470588235"
-                    Point3="4,35.7176470588235" />
-                  <mssgle:LineSegment
-                    End="211.6,35.7176470588235" />
-                  <mssgle:CubicBezierSegment
-                    Point1="211.6,35.7176470588235"
-                    Point2="215.6,35.7176470588235"
-                    Point3="215.6,39.7176470588235" />
-                  <mssgle:LineSegment
-                    End="215.6,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Saída de Conversão de Dados1]"
-          TopLeft="440.9,555.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Saída de Conversão de Dados]"
-          TopLeft="147.9,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45,59.9999999999999"
-              Start="0,0"
-              End="45,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.9999999999999"
-                    Point2="0,29.9999999999999"
-                    Point3="4,29.9999999999999" />
-                  <mssgle:LineSegment
-                    End="41,29.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41,29.9999999999999"
-                    Point2="45,29.9999999999999"
-                    Point3="45,33.9999999999999" />
-                  <mssgle:LineSegment
-                    End="45,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Saída de Coluna Derivada]"
-          TopLeft="440.9,453.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000002"
-              Start="0,0"
-              End="0,52.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="440.9,656.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="521.9,656.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="146,60"
-              Start="0,0"
-              End="146,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.3187250996016" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.3187250996016"
-                    Point2="0,20.3187250996016"
-                    Point3="4,20.3187250996016" />
-                  <mssgle:LineSegment
-                    End="142,20.3187250996016" />
-                  <mssgle:CubicBezierSegment
-                    Point1="142,20.3187250996016"
-                    Point2="146,20.3187250996016"
-                    Point3="146,24.3187250996016" />
-                  <mssgle:LineSegment
-                    End="146,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-30.3626953125,25.3187250996016,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Saída da Junção de Mesclagem]"
-          TopLeft="440.9,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Produto]"
-          TopLeft="147.9,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Output0]"
-          TopLeft="440.9,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Nova Saída]"
-          TopLeft="359.9,656.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-134,60"
-              Start="0,0"
-              End="-134,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.3187250996016" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.3187250996016"
-                    Point2="0,20.3187250996016"
-                    Point3="-4,20.3187250996016" />
-                  <mssgle:LineSegment
-                    End="-130,20.3187250996016" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-130,20.3187250996016"
-                    Point2="-134,20.3187250996016"
-                    Point3="-134,24.3187250996016" />
-                  <mssgle:LineSegment
-                    End="-134,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-91.993359375,25.3187250996016,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga de Produtos.Paths[Classificar Saída1]"
-          TopLeft="440.9,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="32.4,59.9999999999999"
-              Start="0,0"
-              End="32.4,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.7176470588235" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7176470588235"
-                    Point2="0,35.7176470588235"
-                    Point3="4,35.7176470588235" />
-                  <mssgle:LineSegment
-                    End="28.4,35.7176470588235" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.4,35.7176470588235"
-                    Point2="32.4,35.7176470588235"
-                    Point3="32.4,39.7176470588235" />
-                  <mssgle:LineSegment
-                    End="32.4,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga de Produtos\Gravação de dados na tabela PRODUTO do Data Lake">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{4FC76E1C-5DA3-4825-930C-77581436F42D}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[tbl_produto]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de colunas para PRODUTOS.Saídas[Saída de Conversão de Dados].Colunas[ARQUIVO_ORIGEM_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;arquivo_origem&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[unidade]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;atr_unidade_medida&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de colunas para PRODUTOS.Saídas[Saída de Conversão de Dados].Colunas[CNPJ_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;cod_fornecedor&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[SKU_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;cod_produto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Acrescentando colunas do Metadados.Saídas[Saída de Coluna Derivada].Colunas[DATA_CARGA]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;data_carga&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[departamento]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;desc_departamento&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de colunas para PRODUTOS.Saídas[Saída de Conversão de Dados].Colunas[FORNECEDOR_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;desc_fornecedor&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Junção dados JSON e XML.Saídas[Saída da Junção de Mesclagem].Colunas[descritor]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;desc_produto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Inserir Destino&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Verificando diretório IN de COMPRAS\Carga de Compras">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="252,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Conexão com arquivo COMPRAS CSV"
-          TopLeft="153.999997705221,75.9999988675117" />
-        <NodeLayout
-          Size="241.6,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Acrescentar colunas de Metadados"
-          TopLeft="133.999998003244,197.99999704957" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="279.999997705221,117.599998867512">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-25.1999997019769,80.3999981820584"
-              Start="0,0"
-              End="-25.1999997019769,72.8999981820584">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.1999990910292" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.1999990910292"
-                    Point2="0,40.1999990910292"
-                    Point3="-4,40.1999990910292" />
-                  <mssgle:LineSegment
-                    End="-21.1999997019769,40.1999990910292" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-21.1999997019769,40.1999990910292"
-                    Point2="-25.1999997019769,40.1999990910292"
-                    Point3="-25.1999997019769,44.1999990910292" />
-                  <mssgle:LineSegment
-                    End="-25.1999997019769,72.8999981820584" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Coluna Derivada"
-          TopLeft="164.999997541308,308.999995395541" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Coluna Derivada]"
-          TopLeft="254.799998003244,239.59999704957">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.2000004619359,69.3999983459711"
-              Start="0,0"
-              End="-12.2000004619359,61.8999983459711">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.6999991729856" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.6999991729856"
-                    Point2="0,34.6999991729856"
-                    Point3="-4,34.6999991729856" />
-                  <mssgle:LineSegment
-                    End="-8.20000046193587,34.6999991729856" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.20000046193587,34.6999991729856"
-                    Point2="-12.2000004619359,34.6999991729856"
-                    Point3="-12.2000004619359,38.6999991729856" />
-                  <mssgle:LineSegment
-                    End="-12.2000004619359,61.8999983459711" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-14.1000002309679,39.6999991729856,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="205.6,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Origem de Arquivo Simples"
-          TopLeft="133.999998003244,47.9999992847443" />
-        <NodeLayout
-          Size="241.6,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Acrescentar colunas de Metadados"
-          TopLeft="156.999997660518,137.99999794364" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="236.799998003244,89.5999992847443">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.9999996572733,48.3999986588955"
-              Start="0,0"
-              End="40.9999996572733,40.8999986588955">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.1999993294478" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.1999993294478"
-                    Point2="0,24.1999993294478"
-                    Point3="4,24.1999993294478" />
-                  <mssgle:LineSegment
-                    End="36.9999996572733,24.1999993294478" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.9999996572733,24.1999993294478"
-                    Point2="40.9999996572733,24.1999993294478"
-                    Point3="40.9999996572733,28.1999993294478" />
-                  <mssgle:LineSegment
-                    End="40.9999996572733,40.8999986588955" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Coluna Derivada"
-          TopLeft="187.999997198582,259.999996125698" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Coluna Derivada]"
-          TopLeft="277.799997660518,179.59999794364">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.200000461936,80.3999981820583"
-              Start="0,0"
-              End="-12.200000461936,72.8999981820583">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.1999990910292" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.1999990910292"
-                    Point2="0,40.1999990910292"
-                    Point3="-4,40.1999990910292" />
-                  <mssgle:LineSegment
-                    End="-8.20000046193599,40.1999990910292" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.20000046193599,40.1999990910292"
-                    Point2="-12.200000461936,40.1999990910292"
-                    Point3="-12.200000461936,44.1999990910292" />
-                  <mssgle:LineSegment
-                    End="-12.200000461936,72.8999981820583" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-14.100000230968,45.1999990910292,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
