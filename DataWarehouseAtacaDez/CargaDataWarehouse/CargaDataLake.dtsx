@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDataLake"
   DTS:PackageType="5"
-  DTS:VersionBuild="120"
-  DTS:VersionGUID="{C2D0B8D1-FD32-4D50-88CE-C912B92BB816}">
+  DTS:VersionBuild="121"
+  DTS:VersionGUID="{AE622897-59C0-4CA0-8979-4D5E7B63E252}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -135,7 +135,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=Bosuliya;Initial Catalog=DL_ATACADEZ;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=Bosuliya;Initial Catalog=DL_ATACADEZ;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-CargaDataLake-{4FC76E1C-5DA3-4825-930C-77581436F42D}Conexão com Data Lake;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -9243,7 +9243,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Movendo arquivo do diretório IN para diretório OUT - Compras"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -10596,7 +10596,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Movendo arquivo do diretório IN para diretório OUT - Itens"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -13128,7 +13128,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Movendo arquivo do diretório IN para diretório OUT - Notas"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -13306,6 +13306,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Contêiner da Sequência\Carga de Clientes"
+          TopLeft="377.334694699287,35.0134453355396" />
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Contêiner da Sequência\Carga de Empresas"
+          TopLeft="10.8571429909494,35.3411764276894" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Contêiner da Sequência\Carga de Produtos"
+          TopLeft="196.41632702196,35.7781512172222" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="546.4,128.8"
+          Size="546.4,172"
+          Id="Package\Contêiner da Sequência"
+          TopLeft="26.1904762462287,183.960784175517" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\Fim do processo de carga"
+          TopLeft="869.285714871117,523.196078018184" />
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\Inicio do processo de carga"
+          TopLeft="386.607143680128,34.4117646757191" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Limpeza do LOG"
+          TopLeft="120.535714542303,36.3235293799257" />
+        <NodeLayout
           Size="164.8,41.6"
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras"
           TopLeft="106.685714550286,30.1176469623009" />
@@ -13384,13 +13415,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais"
           TopLeft="91.9428572857864,8.1411762909494" />
         <NodeLayout
-          Size="359.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Movendo arquivo do diretório IN para diretório OUT - Notas"
-          TopLeft="5.19387755036874,164.304201284912" />
-        <NodeLayout
           Size="141.6,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga Tempo"
           TopLeft="106.171428845123,82.5546216150941" />
+        <NodeLayout
+          Size="359.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Movendo arquivo do diretório IN para diretório OUT - Notas"
+          TopLeft="5.19387755036874,164.304201284912" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de NOTAS.PrecedenceConstraints[Restrição]"
           TopLeft="180.657143065455,49.7411762909494">
@@ -13442,25 +13473,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Size="369.6,304.8"
           Id="Package\Verificando diretório IN de NOTAS"
           TopLeft="99.6394558752099,478.999999555595" />
-        <NodeLayout
-          Size="169.6,41.6"
-          Id="Package\Contêiner da Sequência\Carga de Empresas"
-          TopLeft="10.8571429909494,35.3411764276894" />
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Contêiner da Sequência\Carga de Produtos"
-          TopLeft="196.41632702196,35.7781512172222" />
-        <NodeLayout
-          Size="160.8,41.6"
-          Id="Package\Contêiner da Sequência\Carga de Clientes"
-          TopLeft="377.334694699287,35.0134453355396" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="546.4,128.8"
-          Size="546.4,172"
-          Id="Package\Contêiner da Sequência"
-          TopLeft="26.1904762462287,183.960784175517" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restrição]"
           TopLeft="299.390476246229,355.960784175517">
@@ -13563,14 +13575,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Limpeza do LOG"
-          TopLeft="120.535714542303,36.3235293799257" />
-        <NodeLayout
-          Size="208,41.6"
-          Id="Package\Inicio do processo de carga"
-          TopLeft="386.607143680128,34.4117646757191" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restrição 3]"
           TopLeft="275.735714542303,56.1676470278224">
@@ -13627,10 +13631,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="199.2,41.6"
-          Id="Package\Fim do processo de carga"
-          TopLeft="869.285714871117,523.196078018184" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restrição 5]"
           TopLeft="958.684354727161,465.722128963831">
@@ -13702,6 +13702,46 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package.EventHandlers[OnError]\Escreve LOG de erro"
+          TopLeft="143.999997854233,84.9999987334013" />
+        <NodeLayout
+          Size="276.8,41.6"
+          Id="Package.EventHandlers[OnError]\Escreve o fim do processo de erro do LOG"
+          TopLeft="405.999993950129,82.9999987632036" />
+        <EdgeLayout
+          Id="Package.EventHandlers[OnError].PrecedenceConstraints[Restrição]"
+          TopLeft="319.199997854233,104.799998748302">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86.7999960958958,0"
+              Start="0,0"
+              End="79.2999960958958,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="79.2999960958958,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\Contêiner da Sequência\Carga de Clientes">
     <LayoutInfo>
@@ -15141,6 +15181,68 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Gravação na tabela COMPRAS">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{4FC76E1C-5DA3-4825-930C-77581436F42D}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[tbl_compra]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão do arquivo COMPRAS CSV.Saídas[Saída de Conversão de Dados].Colunas[ARQUIVO_ORIGEM_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;arquivo_origem&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conexão com arquivo COMPRAS CSV.Saídas[Saída de Origem de Arquivo Simples].Colunas[codigo_produto]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;cod_produto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Acrescentar colunas de Metadados.Saídas[Saída de Coluna Derivada].Colunas[DATA_CARGA]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;data_carga&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conexão com arquivo COMPRAS CSV.Saídas[Saída de Origem de Arquivo Simples].Colunas[mes_ano]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;mes_ano&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão do arquivo COMPRAS CSV.Saídas[Saída de Conversão de Dados].Colunas[PRECO_COMPRA_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;preco_compra&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Inserir Destino&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas">
     <LayoutInfo>
@@ -15339,6 +15441,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Gravação na tabela ITEM">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{4FC76E1C-5DA3-4825-930C-77581436F42D}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[tbl_item]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[ARQUIVO_ORIGEM_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;arquivo_origem&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[codigo_produto_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;cod_produto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Acrescentar colunas de Metadados.Saídas[Saída de Coluna Derivada].Colunas[DATA_CARGA]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;data_carga&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[NUMERO_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;numero&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[PRECO_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;preco&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[QUANTIDADE_CONVERTIDO]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;quantidade&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Inserir Destino&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais">
     <LayoutInfo>
@@ -15583,136 +15753,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       &lt;ColumnName&gt;numero&lt;/ColumnName&gt;
       &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
       &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Inserir Destino&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Gravação na tabela ITEM">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{4FC76E1C-5DA3-4825-930C-77581436F42D}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[tbl_item]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[ARQUIVO_ORIGEM_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;arquivo_origem&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[codigo_produto_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;cod_produto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Acrescentar colunas de Metadados.Saídas[Saída de Coluna Derivada].Colunas[DATA_CARGA]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;data_carga&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[NUMERO_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;numero&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[PRECO_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;preco&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão para o arquivo ITENS CSV.Saídas[Saída de Conversão de Dados].Colunas[QUANTIDADE_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;quantidade&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Inserir Destino&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Gravação na tabela COMPRAS">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{4FC76E1C-5DA3-4825-930C-77581436F42D}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[tbl_compra]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão do arquivo COMPRAS CSV.Saídas[Saída de Conversão de Dados].Colunas[ARQUIVO_ORIGEM_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;arquivo_origem&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conexão com arquivo COMPRAS CSV.Saídas[Saída de Origem de Arquivo Simples].Colunas[codigo_produto]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;cod_produto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Acrescentar colunas de Metadados.Saídas[Saída de Coluna Derivada].Colunas[DATA_CARGA]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;data_carga&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conexão com arquivo COMPRAS CSV.Saídas[Saída de Origem de Arquivo Simples].Colunas[mes_ano]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;mes_ano&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão do arquivo COMPRAS CSV.Saídas[Saída de Conversão de Dados].Colunas[PRECO_COMPRA_CONVERTIDO]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;preco_compra&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
   &lt;/InputToColumnsCollection&gt;
   &lt;GeneratedComponentsIdentificationStrings&gt;
@@ -16009,43 +16049,5 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package.EventHandlers[OnError]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package.EventHandlers[OnError]\Escreve LOG de erro"
-          TopLeft="143.999997854233,84.9999987334013" />
-        <NodeLayout
-          Size="276.8,41.6"
-          Id="Package.EventHandlers[OnError]\Escreve o fim do processo de erro do LOG"
-          TopLeft="405.999993950129,82.9999987632036" />
-        <EdgeLayout
-          Id="Package.EventHandlers[OnError].PrecedenceConstraints[Restrição]"
-          TopLeft="319.199997854233,104.799998748302">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="86.7999960958958,0"
-              Start="0,0"
-              End="79.2999960958958,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="79.2999960958958,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
