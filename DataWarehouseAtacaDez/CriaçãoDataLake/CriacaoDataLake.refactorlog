@@ -56,4 +56,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="mes_ano" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="1e6ef52b-da07-4851-8b8a-1a75b949c692" ChangeDateTime="04/21/2026 00:32:05">
+    <Property Name="ElementName" Value="[dbo].[tbl_tempo].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_tempo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cod_dia" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f359a364-1eac-4f6e-bdb4-2105610718bf" ChangeDateTime="04/21/2026 15:14:27">
+    <Property Name="ElementName" Value="[dbo].[tbl_log].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_log]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="data" />
+  </Operation>
 </Operations>

@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">BOSULIYA</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1G8UXbHqXkCdsTKcsc1S9QAAAAACAAAAAAAQZgAAAAEAACAAAAARZ0OzV47FxwY43eQONCQcogztnS9k02AXkJY9ZhtyAAAAAAAOgAAAAAIAACAAAACtYsrqUy5U6cPALFKIirvFG83HxyMpWYFEFaEa4MmKCZAAAADB1igAtiQVedD5I5LsUa9PFKisQ6lSDjTMIraO+8wyUaaYHJ6AJhdByCsuIAaaJsUYveh0Dye3zYDVEkwpGEDJKAtdGYbOVMeC0POV0StwRJGqWBxlmiNX90NJDhQ/xm3JoTPdrpHQiI5hv6JqD8FKGdcWuyFmPVRAqpvRq2OaS0b+t8/sWbSsNK61+HbFehtAAAAAhR/aWtfnlnb1a+trXBSqIvoRJC6Df/wz0POsDp0SeUctLGBo7qletFBRXYNAqOwm+Nyc27N8DLCTKRWZlNjvvg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1G8UXbHqXkCdsTKcsc1S9QAAAAACAAAAAAAQZgAAAAEAACAAAACBkd/8rMoR8GIPmjaRqXIP8zeOIwm4gHDv4TMaJn8jwgAAAAAOgAAAAAIAACAAAADqaeicsTp7zDIsBDvYp+xwoKZhi5iOTGB2jbBcfhL6IpAAAABDXxxhCOlDH+VGSjq5Fq9QOw5+55X0X6fDKfMMObrviiZi6LFAMmqBe60jHCZC4GUDZKna0Kw7SzDJLCkOTPcLRtFYeqVAevBPOC9a7582CTWMw7lnPr+y4mrWUKCu3G0vA0NAt2/j38JZuBNr/vUSBXLD1DK8/nMi2UqjzZ+XUCHXiHYHGVfjFIO15iFIzwFAAAAA6AVQ+ZNsN8xqjGcBiJt8evxd3Hsd5CJSWIKpYO7heCm359PKMZq8gsEGQpfKysA18JMozjLp8iryJ+gxKPmaIQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">CargaDataLake</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">88</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">116</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3B52E3BD-13E7-46C8-847A-8E860A3DA9D9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{17226857-C790-44F1-96B6-B418A8C8C30E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -78,7 +78,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Fontes\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -93,7 +93,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Fontes\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -166,7 +166,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Fontes\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\CLIENTE\IN\CADASTRO DE CLIENTES.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -437,7 +437,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Fontes\DATA\DIMENSOES\CLIENTE\IN\REGIOES DOS ESTADOS.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\CLIENTE\IN\REGIOES DOS ESTADOS.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -964,7 +964,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Fontes\DATA\DIMENSOES\EMPRESA\IN\EMPRESA.CSV</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\DIMENSOES\EMPRESA\IN\EMPRESA.CSV</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1343,7 +1343,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Fontes\DATA\FATOS\NOTAS\OUT\Movimento_Notas_2021_01.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\joaop\OneDrive\Documentos\Profissional\Fontes\DW_AtacaDez\DATA\FATOS\NOTAS\OUT\Movimento_Notas_2021_02.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
