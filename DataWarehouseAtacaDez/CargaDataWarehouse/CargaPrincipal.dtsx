@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaPrincipal"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{25C06886-CB9B-4B66-8027-4D3058834963}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{7B56523A-A4AB-4534-9B8B-0DE19EB626C2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1550,14 +1550,14 @@
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Carga do Data Lake"
-          TopLeft="130.000000276736,94.0588234469656" />
+          TopLeft="48.5714286748245,78.7647058133127" />
         <NodeLayout
           Size="147.2,41.6"
           Id="Package\Escreve o LOG"
-          TopLeft="125.714285981898,173.588235141961" />
+          TopLeft="44.2857143799865,158.294117508308" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restrição]"
-          TopLeft="215.600000276736,135.658823446966">
+          TopLeft="134.171428674825,120.364705813313">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1598,9 +1598,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="230.4,41.6"
+          Id="Package\Escreve o LOG\Cria a linha a ser escrita no LOG"
+          TopLeft="345.857143363478,417.952940955273" />
+        <NodeLayout
+          Size="207.2,41.6"
+          Id="Package\Escreve o LOG\Destino de Arquivo Simples"
+          TopLeft="371.114286098979,500.082352730034" />
+        <NodeLayout
+          Size="204.8,41.6"
+          Id="Package\Escreve o LOG\Converter a data em string"
+          TopLeft="288.600000415104,324.258823321621" />
+        <NodeLayout
           Size="196,41.6"
           Id="Package\Escreve o LOG\Leitura da tabela de LOG"
           TopLeft="174.285714656723,33.6470587940365" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Escreve o LOG\Classificar por data"
+          TopLeft="225.800000308667,245.47058802013" />
         <NodeLayout
           Size="206.4,41.6"
           Id="Package\Escreve o LOG\Eliminar as linhas repetidas"
@@ -1639,86 +1655,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168,41.6"
-          Id="Package\Escreve o LOG\Classificar por data"
-          TopLeft="225.800000308667,245.47058802013" />
-        <EdgeLayout
-          Id="Package\Escreve o LOG.Paths[Classificar Saída]"
-          TopLeft="376.057143437984,191.482352809799">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-66.2571431293173,53.9882352103309"
-              Start="0,0"
-              End="-66.2571431293173,46.4882352103309">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.9941176051655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.9941176051655"
-                    Point2="0,26.9941176051655"
-                    Point3="-4,26.9941176051655" />
-                  <mssgle:LineSegment
-                    End="-62.2571431293173,26.9941176051655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-62.2571431293173,26.9941176051655"
-                    Point2="-66.2571431293173,26.9941176051655"
-                    Point3="-66.2571431293173,30.9941176051655" />
-                  <mssgle:LineSegment
-                    End="-66.2571431293173,46.4882352103309" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="204.8,41.6"
-          Id="Package\Escreve o LOG\Converter a data em string"
-          TopLeft="288.600000415104,324.258823321621" />
-        <EdgeLayout
-          Id="Package\Escreve o LOG.Paths[Classificar Saída1]"
-          TopLeft="309.800000308667,287.07058802013">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="81.200000106437,37.1882353014908"
-              Start="0,0"
-              End="81.200000106437,29.6882353014908">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.5941176507454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.5941176507454"
-                    Point2="0,18.5941176507454"
-                    Point3="4,18.5941176507454" />
-                  <mssgle:LineSegment
-                    End="77.200000106437,18.5941176507454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="77.200000106437,18.5941176507454"
-                    Point2="81.200000106437,18.5941176507454"
-                    Point3="81.200000106437,22.5941176507454" />
-                  <mssgle:LineSegment
-                    End="81.200000106437,29.6882353014908" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="230.4,41.6"
-          Id="Package\Escreve o LOG\Cria a linha a ser escrita no LOG"
-          TopLeft="345.857143363478,417.952940955273" />
         <EdgeLayout
           Id="Package\Escreve o LOG.Paths[Saída de Conversão de Dados]"
           TopLeft="391.000000415104,365.858823321621">
@@ -1753,10 +1689,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="207.2,41.6"
-          Id="Package\Escreve o LOG\Destino de Arquivo Simples"
-          TopLeft="371.114286098979,500.082352730034" />
         <EdgeLayout
           Id="Package\Escreve o LOG.Paths[Saída de Coluna Derivada]"
           TopLeft="461.057143363478,459.552940955273">
@@ -1791,22 +1723,77 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Escreve o LOG.Paths[Classificar Saída1]"
+          TopLeft="309.800000308667,287.07058802013">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.200000106437,37.1882353014908"
+              Start="0,0"
+              End="81.200000106437,29.6882353014908">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.5941176507454" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.5941176507454"
+                    Point2="0,18.5941176507454"
+                    Point3="4,18.5941176507454" />
+                  <mssgle:LineSegment
+                    End="77.200000106437,18.5941176507454" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.200000106437,18.5941176507454"
+                    Point2="81.200000106437,18.5941176507454"
+                    Point3="81.200000106437,22.5941176507454" />
+                  <mssgle:LineSegment
+                    End="81.200000106437,29.6882353014908" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Escreve o LOG.Paths[Classificar Saída]"
+          TopLeft="376.057143437984,191.482352809799">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-66.2571431293173,53.9882352103309"
+              Start="0,0"
+              End="-66.2571431293173,46.4882352103309">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9941176051655" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.9941176051655"
+                    Point2="0,26.9941176051655"
+                    Point3="-4,26.9941176051655" />
+                  <mssgle:LineSegment
+                    End="-62.2571431293173,26.9941176051655" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-62.2571431293173,26.9941176051655"
+                    Point2="-66.2571431293173,26.9941176051655"
+                    Point3="-66.2571431293173,30.9941176051655" />
+                  <mssgle:LineSegment
+                    End="-66.2571431293173,46.4882352103309" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Escreve o LOG\Leitura da tabela de LOG">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <DtsEventHandler
     design-time-name="Package\Escreve o LOG.EventHandlers[OnError]">
     <LayoutInfo>
@@ -2031,5 +2018,18 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Escreve o LOG\Leitura da tabela de LOG">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
