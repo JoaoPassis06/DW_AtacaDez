@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDataWarehouse"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{4299C84A-DC17-4241-B050-4AD5A6379F58}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{2FA446EA-7368-48F8-85AC-94D2C32787B2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -43,6 +43,1972 @@
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Carga de dados de Clientes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarefa Fluxo de Dados"
+      DTS:DTSID="{9ABC356D-7165-4921-94BF-18EA8F3789D2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga de dados de Clientes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Classificar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Classifica os dados de entrada em ordem crescente ou decrescente quando eles não podem ser classificados em sua origem. Por exemplo, classifique dados de vendas por 'customer id' antes de eles serem gravados em um arquivo simples e entregues a outro departamento. Observação: essa transformação não é recomendável para fluxos de dados grandes."
+              name="Classificar pelo código natural do Data Lake"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação Classificação remove linhas com valores de classificação duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o número máximo de threads a usar para classificação."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada]"
+                  name="Classificar Entrada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[arquivo_origem]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="arquivo_origem"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[arquivo_origem]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[data_carga]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="data_carga"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[data_carga]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[cod_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_cliente"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[desc_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cliente"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[endereco]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="endereco"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[endereco]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[faturamento]"
+                      cachedDataType="r8"
+                      cachedName="faturamento"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[desc_segmento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_segmento"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_segmento]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[desc_cidade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cidade"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cidade]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[cod_estado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_estado"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_estado]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[desc_estado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_estado"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_estado]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[desc_regiao]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_regiao"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_regiao]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada].Columns[atr_tamanho]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="atr_tamanho"
+                      lineageId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Coluna Derivada].Columns[atr_tamanho]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída]"
+                  isSorted="true"
+                  name="Classificar Saída">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[arquivo_origem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[arquivo_origem]"
+                      name="arquivo_origem">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[arquivo_origem]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[data_carga]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[data_carga]"
+                      name="data_carga">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[data_carga]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[cod_cliente]"
+                      name="cod_cliente"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_cliente]"
+                      name="desc_cliente">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[endereco]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[endereco]"
+                      name="endereco">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[endereco]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[faturamento]"
+                      dataType="r8"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[faturamento]"
+                      name="faturamento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_segmento]"
+                      name="desc_segmento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_segmento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_cidade]"
+                      name="desc_cidade">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cidade]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[cod_estado]"
+                      name="cod_estado">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_estado]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_estado]"
+                      name="desc_estado">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_estado]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_regiao]"
+                      name="desc_regiao">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_regiao]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[atr_tamanho]"
+                      codePage="1252"
+                      dataType="str"
+                      length="13"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[atr_tamanho]"
+                      name="atr_tamanho">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Coluna Derivada].Columns[atr_tamanho]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Classificar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Classifica os dados de entrada em ordem crescente ou decrescente quando eles não podem ser classificados em sua origem. Por exemplo, classifique dados de vendas por 'customer id' antes de eles serem gravados em um arquivo simples e entregues a outro departamento. Observação: essa transformação não é recomendável para fluxos de dados grandes."
+              name="Classificar pelo código natural do dw"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação Classificação remove linhas com valores de classificação duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o número máximo de threads a usar para classificação."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Inputs[Classificar Entrada]"
+                  name="Classificar Entrada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Inputs[Classificar Entrada].Columns[cod_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_cliente"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Outputs[Classificar Saída]"
+                  isSorted="true"
+                  name="Classificar Saída">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Outputs[Classificar Saída].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Outputs[Classificar Saída].Columns[cod_cliente]"
+                      name="cod_cliente"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origem OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;7"
+              description="Origem OLE DB"
+              name="Conexão com a dimensão de Clientes"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">[dbo].[dm_cliente]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="A variável que contém o comando SQL a ser executado."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Data Warehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Data Warehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB]"
+                  name="Saída de Origem OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_cliente]"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]"
+                      name="cod_cliente"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[id_cliente]"
+                      dataType="i4"
+                      name="id_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cod_estado" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_estado" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[atr_tamanho_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="atr_tamanho_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_cidade" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_regiao" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_cidade" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_regiao" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_segmento" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_segmento" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[cod_cliente]"
+                      name="cod_cliente" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origem OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;7"
+              description="Origem OLE DB"
+              name="Conexão com a tabela de Clientes"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">[dbo].[tbl_cliente]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="A variável que contém o comando SQL a ser executado."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com Data Lake]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com Data Lake]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB]"
+                  name="Saída de Origem OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[arquivo_origem]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[arquivo_origem]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[arquivo_origem]"
+                      name="arquivo_origem"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[data_carga]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[data_carga]"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[data_carga]"
+                      name="data_carga"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_cliente]"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_cliente]"
+                      name="cod_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_cliente]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cliente]"
+                      name="desc_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[endereco]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[endereco]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[endereco]"
+                      name="endereco"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[faturamento]"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]"
+                      name="faturamento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_segmento]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_segmento]"
+                      name="desc_segmento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_cidade]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_cidade]"
+                      name="desc_cidade"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_estado]"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[cod_estado]"
+                      name="cod_estado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_estado]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_estado]"
+                      name="desc_estado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_regiao]"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[desc_regiao]"
+                      name="desc_regiao"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[arquivo_origem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="arquivo_origem" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[data_carga]"
+                      dataType="dbTimeStamp"
+                      name="data_carga" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[endereco]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="endereco" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[faturamento]"
+                      dataType="r8"
+                      name="faturamento" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_segmento" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_cidade" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_estado" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_estado" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].ExternalColumns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_regiao" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[cod_cliente]"
+                      name="cod_cliente" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_cliente]"
+                      name="desc_cliente" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[endereco]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[endereco]"
+                      name="endereco" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[faturamento]"
+                      dataType="r8"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[faturamento]"
+                      name="faturamento" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_segmento]"
+                      name="desc_segmento" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_cidade]"
+                      name="desc_cidade" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[cod_estado]"
+                      name="cod_estado" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_estado]"
+                      name="desc_estado" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[desc_regiao]"
+                      name="desc_regiao" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[arquivo_origem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[arquivo_origem]"
+                      name="arquivo_origem" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[data_carga]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[data_carga]"
+                      name="data_carga" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Erro de Origem OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes"
+              componentClassID="Microsoft.CopyMap"
+              contactInfo="Copiar Coluna;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Copia colunas de entrada em novas colunas na saída da transformação. Por exemplo, crie uma cópia da coluna 'address' para que ela possa ser limpa por transformações subsequentes e deixar a coluna original no lugar para fins de auditoria."
+              name="Copiar as colunas de código não existentes">
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Inputs[Copiar Entrada de Coluna]"
+                  name="Copiar Entrada de Coluna">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Inputs[Copiar Entrada de Coluna].Columns[desc_segmento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_segmento"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_segmento]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Inputs[Copiar Entrada de Coluna].Columns[desc_cidade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cidade"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cidade]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Inputs[Copiar Entrada de Coluna].Columns[desc_regiao]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_regiao"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_regiao]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna]"
+                  name="Copiar Saída de Coluna"
+                  synchronousInputId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Inputs[Copiar Entrada de Coluna]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_segmento]"
+                      name="cod_segmento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna a ser copiada."
+                          name="copyColumnId">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_segmento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_cidade]"
+                      name="cod_cidade">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna a ser copiada."
+                          name="copyColumnId">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cidade]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_regiao]"
+                      name="cod_regiao">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna a ser copiada."
+                          name="copyColumnId">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_regiao]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino OLE DB"
+              name="Gravação dos dados não existentes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">[dbo].[dm_cliente]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se os valores fornecidos para colunas de identidade serão copiados no destino. Se false, os valores para colunas de identidade serão gerados automaticamente no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as colunas que contêm null terão null inserido no destino. Se false, as colunas que contêm null terão seus valores padrão inseridos no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica as opções a serem usadas com o carregamento rápido. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica quando confirmações são emitidas durante a inserção de dados. Um valor de 0 especifica que uma confirmação será emitida ao final da inserção de dados. Aplicável somente se o carregamento rápido estiver ativado."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Data Warehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Data Warehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB]"
+                  errorOrTruncationOperation="Inserir"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Destino OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[cod_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_cliente"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_cliente]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[desc_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cliente"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_cliente]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cliente]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[desc_segmento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_segmento"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_segmento]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_segmento]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[desc_cidade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cidade"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_cidade]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cidade]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[cod_estado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_estado"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_estado]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_estado]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[desc_estado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_estado"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_estado]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_estado]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[desc_regiao]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_regiao"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_regiao]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_regiao]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[cod_segmento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="cod_segmento"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_segmento]"
+                      lineageId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_segmento]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[cod_cidade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="cod_cidade"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_cidade]"
+                      lineageId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_cidade]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[cod_regiao]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="cod_regiao"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_regiao]"
+                      lineageId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna].Columns[cod_regiao]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].Columns[atr_tamanho]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="atr_tamanho"
+                      externalMetadataColumnId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[atr_tamanho_cliente]"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[atr_tamanho]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[id_cliente]"
+                      dataType="i4"
+                      name="id_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cod_estado" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_estado" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[atr_tamanho_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="atr_tamanho_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_cidade" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_regiao" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_cidade" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_regiao" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[cod_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="cod_segmento" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB].ExternalColumns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="desc_segmento" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Outputs[Saída de Erro de Destino OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Destino OLE DB"
+                  synchronousInputId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Junção de Mesclagem;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Combina dois fluxos de dados classificados em um usando a junção FULL, LEFT ou INNER. Essa transformação é recomendável quando os fluxos de dados podem ser classificados em suas fontes."
+              name="Juntando Data Lake com DW"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o tipo de junção a ser executada."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o número de colunas na chave de ordenação."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se os valores nulos serão tratados como valores iguais."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indica o máximo de buffers solicitados por entrada antes do bloqueio."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem]"
+                  hasSideEffects="true"
+                  name="Entrada Esquerda da Junção de Mesclagem">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[cod_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_cliente"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[cod_cliente]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[arquivo_origem]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="arquivo_origem"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[arquivo_origem]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[data_carga]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="data_carga"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[data_carga]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cliente"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_cliente]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[endereco]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="endereco"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[endereco]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[faturamento]"
+                      cachedDataType="r8"
+                      cachedName="faturamento"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[faturamento]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_segmento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_segmento"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_segmento]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_cidade]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_cidade"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_cidade]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[cod_estado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_estado"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[cod_estado]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_estado]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_estado"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_estado]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_regiao]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="desc_regiao"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[desc_regiao]" />
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[atr_tamanho]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="atr_tamanho"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída].Columns[atr_tamanho]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Direita da Junção de Mesclagem]"
+                  hasSideEffects="true"
+                  name="Entrada Direita da Junção de Mesclagem">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Direita da Junção de Mesclagem].Columns[cod_cliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_cliente"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Outputs[Classificar Saída].Columns[cod_cliente]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem]"
+                  isSorted="true"
+                  name="Saída da Junção de Mesclagem">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[arquivo_origem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[arquivo_origem]"
+                      name="arquivo_origem">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[arquivo_origem]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[data_carga]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[data_carga]"
+                      name="data_carga">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[data_carga]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente]"
+                      name="cod_cliente"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[cod_cliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cliente]"
+                      name="desc_cliente">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_cliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[endereco]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[endereco]"
+                      name="endereco">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[endereco]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[faturamento]"
+                      dataType="r8"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[faturamento]"
+                      name="faturamento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[faturamento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_segmento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_segmento]"
+                      name="desc_segmento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_segmento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cidade]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_cidade]"
+                      name="desc_cidade">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_cidade]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_estado]"
+                      name="cod_estado">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[cod_estado]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_estado]"
+                      name="desc_estado">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_estado]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_regiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[desc_regiao]"
+                      name="desc_regiao">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[desc_regiao]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[atr_tamanho]"
+                      codePage="1252"
+                      dataType="str"
+                      length="13"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[atr_tamanho]"
+                      name="atr_tamanho">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem].Columns[atr_tamanho]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente_DW]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente_DW]"
+                      name="cod_cliente_DW">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="A coluna de entrada associada a esta coluna de saída"
+                          name="InputColumnID">#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Direita da Junção de Mesclagem].Columns[cod_cliente]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Separar dados de leitura"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Divisão Condicional;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Encaminha colunas de dados para saídas diferentes, dependendo do conteúdo dos dados. Use condições (expressões do SSIS) para especificar quais linhas são encaminhadas. Por exemplo, separe os registros que precisam ser limpos daqueles que estão prontos para serem carregados ou encaminhe somente um subconjunto de registros."
+              name="Separar dados de leitura"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional]"
+                  description="Entrada para a Transformação Divisão Condicional"
+                  name="Entrada de Divisão Condicional">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional].Columns[cod_cliente_DW]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="cod_cliente_DW"
+                      lineageId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente_DW]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Existentes]"
+                  description="Saída 1 da Transformação Divisão Condicional"
+                  errorOrTruncationOperation="Computação"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Existentes"
+                  synchronousInputId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica a expressão. Essa versão da expressão usa identificadores de linhagem, em vez de nomes de colunas."
+                      name="Expression">[ISNULL](#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente_DW]}) ==  FALSE </property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica a versão amigável da expressão. Essa versão de expressão usa nomes de colunas."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(cod_cliente_DW) ==  FALSE </property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica a posição da condição na lista de condições que a transformação avalia. A ordem de avaliação é do menor para o maior valor."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Não Existentes]"
+                  description="Saída 2 da Transformação Divisão Condicional"
+                  errorOrTruncationOperation="Computação"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Não Existentes"
+                  synchronousInputId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica a expressão. Essa versão da expressão usa identificadores de linhagem, em vez de nomes de colunas."
+                      name="Expression">[ISNULL](#{Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem].Columns[cod_cliente_DW]}) ==  TRUE </property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica a versão amigável da expressão. Essa versão de expressão usa nomes de colunas."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(cod_cliente_DW) ==  TRUE </property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica a posição da condição na lista de condições que a transformação avalia. A ordem de avaliação é do menor para o maior valor."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Saída Padrão de Divisão Condicional]"
+                  description="Saída Padrão da Transformação Divisão Condicional"
+                  exclusionGroup="1"
+                  name="Saída Padrão de Divisão Condicional"
+                  synchronousInputId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Saída de Erro de Divisão Condicional]"
+                  description="Saída de Erro da Transformação Divisão Condicional"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Divisão Condicional"
+                  synchronousInputId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de dados de Clientes\Tamanho de Cliente"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Coluna Derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Cria novos valores de coluna aplicando expressões a colunas de entrada da transformação. Crie novas colunas ou substitua as existentes. Por exemplo, concatene os valores das colunas 'first name' e 'last name' para formar uma coluna 'full name'."
+              name="Tamanho de Cliente"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Inputs[Entrada de Coluna Derivada]"
+                  description="Entrada para a Transformação Coluna Derivada"
+                  name="Entrada de Coluna Derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Inputs[Entrada de Coluna Derivada].Columns[faturamento]"
+                      cachedDataType="r8"
+                      cachedName="faturamento"
+                      lineageId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Coluna Derivada]"
+                  description="Saída Padrão da Transformação Coluna Derivada"
+                  exclusionGroup="1"
+                  name="Saída de Coluna Derivada"
+                  synchronousInputId="Package\Carga de dados de Clientes\Tamanho de Cliente.Inputs[Entrada de Coluna Derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Coluna Derivada].Columns[atr_tamanho]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computação"
+                      errorRowDisposition="FailComponent"
+                      length="13"
+                      lineageId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Coluna Derivada].Columns[atr_tamanho]"
+                      name="atr_tamanho"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expressão de Coluna Derivada"
+                          name="Expression">(DT_STR,13,1252)(#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]} &gt; 0 &amp;&amp; #{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]} &lt;= 400000 ? "Pequenos" : (#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]} &gt; 400000 &amp;&amp; #{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]} &lt; 1000000 ? "Médios" : (#{Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB].Columns[faturamento]} &gt; 1000000 ? "Grandes" : "")))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expressão Amigável de Coluna Derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,13,1252)(faturamento &gt; 0 &amp;&amp; faturamento &lt;= 400000 ? "Pequenos" : (faturamento &gt; 400000 &amp;&amp; faturamento &lt; 1000000 ? "Médios" : (faturamento &gt; 1000000 ? "Grandes" : "")))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Erro de Coluna Derivada]"
+                  description="Saída de Erro da Transformação Coluna Derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Coluna Derivada"
+                  synchronousInputId="Package\Carga de dados de Clientes\Tamanho de Cliente.Inputs[Entrada de Coluna Derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Classificar Saída]"
+              endId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Esquerda da Junção de Mesclagem]"
+              name="Classificar Saída"
+              startId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Outputs[Classificar Saída]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Classificar Saída1]"
+              endId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Inputs[Entrada Direita da Junção de Mesclagem]"
+              name="Classificar Saída"
+              startId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Outputs[Classificar Saída]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Copiar Saída de Coluna]"
+              endId="Package\Carga de dados de Clientes\Separar dados de leitura.Inputs[Entrada de Divisão Condicional]"
+              name="Copiar Saída de Coluna"
+              startId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Outputs[Copiar Saída de Coluna]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Não Existentes]"
+              endId="Package\Carga de dados de Clientes\Gravação dos dados não existentes.Inputs[Entrada de Destino OLE DB]"
+              name="Não Existentes"
+              startId="Package\Carga de dados de Clientes\Separar dados de leitura.Outputs[Não Existentes]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Saída da Junção de Mesclagem]"
+              endId="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes.Inputs[Copiar Entrada de Coluna]"
+              name="Saída da Junção de Mesclagem"
+              startId="Package\Carga de dados de Clientes\Juntando Data Lake com DW.Outputs[Saída da Junção de Mesclagem]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Saída de Coluna Derivada]"
+              endId="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake.Inputs[Classificar Entrada]"
+              name="Saída de Coluna Derivada"
+              startId="Package\Carga de dados de Clientes\Tamanho de Cliente.Outputs[Saída de Coluna Derivada]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Saída de Origem OLE DB]"
+              endId="Package\Carga de dados de Clientes\Tamanho de Cliente.Inputs[Entrada de Coluna Derivada]"
+              name="Saída de Origem OLE DB"
+              startId="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes.Outputs[Saída de Origem OLE DB]" />
+            <path
+              refId="Package\Carga de dados de Clientes.Paths[Saída de Origem OLE DB1]"
+              endId="Package\Carga de dados de Clientes\Classificar pelo código natural do dw.Inputs[Classificar Entrada]"
+              name="Saída de Origem OLE DB"
+              startId="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes.Outputs[Saída de Origem OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Carga de dados de Empresas"
       DTS:CreationName="Microsoft.Pipeline"
@@ -1687,17 +3653,353 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
+          Size="207.2,41.6"
+          Id="Package\Carga de dados de Clientes"
+          TopLeft="90.9142857903121,115.470588134079" />
+        <NodeLayout
           Size="215.2,41.6"
           Id="Package\Carga de dados de Empresas"
-          TopLeft="127.857143129317,58.1176470078812" />
+          TopLeft="80.7142858861051,58.1176470078812" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Carga de dados de Clientes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="250.4,41.6"
+          Id="Package\Carga de dados de Clientes\Classificar pelo código natural do dw"
+          TopLeft="491.599995321036,243.999996364117" />
+        <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\Carga de dados de Clientes\Tamanho de Cliente"
+          TopLeft="165.999997526407,167.399997541308" />
+        <NodeLayout
+          Size="254.4,41.6"
+          Id="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes"
+          TopLeft="318.20000025332,68.6000004917382" />
+        <NodeLayout
+          Size="237.6,41.6"
+          Id="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes"
+          TopLeft="60,66.3999999403953" />
+        <NodeLayout
+          Size="284,41.6"
+          Id="Package\Carga de dados de Clientes\Classificar pelo código natural do Data Lake"
+          TopLeft="94.6000012367963,274.999995902181" />
+        <NodeLayout
+          Size="215.2,41.6"
+          Id="Package\Carga de dados de Clientes\Juntando Data Lake com DW"
+          TopLeft="336.571424952575,382.857137152127" />
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Saída de Origem OLE DB1]"
+          TopLeft="445.40000025332,110.200000491738">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="171.399995067716,133.799995872378"
+              Start="0,0"
+              End="171.399995067716,126.299995872378">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.8999979361892" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.8999979361892"
+                    Point2="0,66.8999979361892"
+                    Point3="4,66.8999979361892" />
+                  <mssgle:LineSegment
+                    End="167.399995067716,66.8999979361892" />
+                  <mssgle:CubicBezierSegment
+                    Point1="167.399995067716,66.8999979361892"
+                    Point2="171.399995067716,66.8999979361892"
+                    Point3="171.399995067716,70.8999979361892" />
+                  <mssgle:LineSegment
+                    End="171.399995067716,126.299995872378" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Saída de Origem OLE DB]"
+          TopLeft="178.8,107.999999940395">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.599997526407,59.399997600913"
+              Start="0,0"
+              End="73.599997526407,51.899997600913">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.6999988004565" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.6999988004565"
+                    Point2="0,29.6999988004565"
+                    Point3="4,29.6999988004565" />
+                  <mssgle:LineSegment
+                    End="69.599997526407,29.6999988004565" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.599997526407,29.6999988004565"
+                    Point2="73.599997526407,29.6999988004565"
+                    Point3="73.599997526407,33.6999988004565" />
+                  <mssgle:LineSegment
+                    End="73.599997526407,51.899997600913" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Saída de Coluna Derivada]"
+          TopLeft="252.399997526407,208.999997541308">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.7999962896106,65.9999983608724"
+              Start="0,0"
+              End="-15.7999962896106,58.4999983608724">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.9999991804362" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.9999991804362"
+                    Point2="0,32.9999991804362"
+                    Point3="-4,32.9999991804362" />
+                  <mssgle:LineSegment
+                    End="-11.7999962896106,32.9999991804362" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.7999962896106,32.9999991804362"
+                    Point2="-15.7999962896106,32.9999991804362"
+                    Point3="-15.7999962896106,36.9999991804362" />
+                  <mssgle:LineSegment
+                    End="-15.7999962896106,58.4999983608724" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Classificar Saída1]"
+          TopLeft="616.799995321036,285.599996364117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-138.095237035127,97.2571407880102"
+              Start="0,0"
+              End="-138.095237035127,89.7571407880102">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.9236255468075" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53.9236255468075"
+                    Point2="0,57.9236255468075"
+                    Point3="-4,57.9236255468075" />
+                  <mssgle:LineSegment
+                    End="-134.095237035127,57.9236255468075" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-134.095237035127,57.9236255468075"
+                    Point2="-138.095237035127,57.9236255468075"
+                    Point3="-138.095237035127,61.9236255468075" />
+                  <mssgle:LineSegment
+                    End="-138.095237035127,89.7571407880102" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Classificar Saída]"
+          TopLeft="236.600001236796,316.599995902181">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="173.038090382446,66.2571412499461"
+              Start="0,0"
+              End="173.038090382446,58.7571412499461">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.4608951946174" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.4608951946174"
+                    Point2="0,39.4608951946174"
+                    Point3="4,39.4608951946174" />
+                  <mssgle:LineSegment
+                    End="169.038090382446,39.4608951946174" />
+                  <mssgle:CubicBezierSegment
+                    Point1="169.038090382446,39.4608951946174"
+                    Point2="173.038090382446,39.4608951946174"
+                    Point3="173.038090382446,43.4608951946174" />
+                  <mssgle:LineSegment
+                    End="173.038090382446,58.7571412499461" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="280.8,41.6"
+          Id="Package\Carga de dados de Clientes\Copiar as colunas de código não existentes"
+          TopLeft="305.107142961679,512.779411532616" />
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Saída da Junção de Mesclagem]"
+          TopLeft="444.839283957127,424.457137152127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,88.3222743804893"
+              Start="0,0"
+              End="0,80.8222743804893">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,80.8222743804893" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="193.6,41.6"
+          Id="Package\Carga de dados de Clientes\Separar dados de leitura"
+          TopLeft="346.500000186265,596.882352673059" />
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Copiar Saída de Coluna]"
+          TopLeft="444.403571573972,554.379411532616">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.5029411404423"
+              Start="0,0"
+              End="0,35.0029411404423">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.0029411404423" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="244.8,41.6"
+          Id="Package\Carga de dados de Clientes\Gravação dos dados não existentes"
+          TopLeft="172.857142575845,695.220587954608" />
+        <EdgeLayout
+          Id="Package\Carga de dados de Clientes.Paths[Não Existentes]"
+          TopLeft="443.300000186265,638.482352673059">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-148.042857610419,56.7382352815496"
+              Start="0,0"
+              End="-148.042857610419,49.2382352815496">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.3691176407748" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.3691176407748"
+                    Point2="0,28.3691176407748"
+                    Point3="-4,28.3691176407748" />
+                  <mssgle:LineSegment
+                    End="-144.042857610419,28.3691176407748" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-144.042857610419,28.3691176407748"
+                    Point2="-148.042857610419,28.3691176407748"
+                    Point3="-148.042857610419,32.3691176407748" />
+                  <mssgle:LineSegment
+                    End="-148.042857610419,49.2382352815496" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-107.07400693021,33.3691176407748,66.10515625,10.1201171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga de dados de Clientes\Conexão com a dimensão de Clientes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga de dados de Clientes\Conexão com a tabela de Clientes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Carga de dados de Empresas">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="215.2,41.6"
+          Id="Package\Carga de dados de Empresas\Juntando Data Lake com DW"
+          TopLeft="262.57142892115,445.7142853236" />
+        <NodeLayout
+          Size="205.6,41.6"
+          Id="Package\Carga de dados de Empresas\Gravando dados existentes"
+          TopLeft="408.448979928525,617.512604810287" />
+        <NodeLayout
+          Size="230.4,41.6"
+          Id="Package\Carga de dados de Empresas\Classificar código natural do DW"
+          TopLeft="372.057143395409,329.588235005221" />
         <NodeLayout
           Size="246.4,41.6"
           Id="Package\Carga de dados de Empresas\Conexão com a tabela de Empresas"
@@ -1706,6 +4008,56 @@
           Size="160,41.6"
           Id="Package\Carga de dados de Empresas\Tamanho da Loja"
           TopLeft="49.8571427248569,209.529411581045" />
+        <NodeLayout
+          Size="257.6,41.6"
+          Id="Package\Carga de dados de Empresas\Conexão com a dimensão de Empresa"
+          TopLeft="284.485714603504,84.1176469850911" />
+        <NodeLayout
+          Size="225.6,41.6"
+          Id="Package\Carga de dados de Empresas\Gravando dados não existentes"
+          TopLeft="125.387755128107,623.563024897918" />
+        <NodeLayout
+          Size="260.8,41.6"
+          Id="Package\Carga de dados de Empresas\Classificar código natural do Data Lake"
+          TopLeft="85.7142858967489,326.52941147849" />
+        <NodeLayout
+          Size="193.6,41.6"
+          Id="Package\Carga de dados de Empresas\Separar dados de leitura"
+          TopLeft="274.448979791677,542.857142531571" />
+        <EdgeLayout
+          Id="Package\Carga de dados de Empresas.Paths[Saída de Origem OLE DB1]"
+          TopLeft="413.285714603504,125.717646985091">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.9714287919049,203.87058802013"
+              Start="0,0"
+              End="73.9714287919049,196.37058802013">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,97.9352940100648" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,97.9352940100648"
+                    Point2="0,101.935294010065"
+                    Point3="4,101.935294010065" />
+                  <mssgle:LineSegment
+                    End="69.9714287919049,101.935294010065" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.9714287919049,101.935294010065"
+                    Point2="73.9714287919049,101.935294010065"
+                    Point3="73.9714287919049,105.935294010065" />
+                  <mssgle:LineSegment
+                    End="73.9714287919049,196.37058802013" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Carga de dados de Empresas.Paths[Saída de Origem OLE DB]"
           TopLeft="131.528571373072,124.952941103409">
@@ -1728,18 +4080,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="257.6,41.6"
-          Id="Package\Carga de dados de Empresas\Conexão com a dimensão de Empresa"
-          TopLeft="284.485714603504,84.1176469850911" />
-        <NodeLayout
-          Size="260.8,41.6"
-          Id="Package\Carga de dados de Empresas\Classificar código natural do Data Lake"
-          TopLeft="85.7142858967489,326.52941147849" />
-        <NodeLayout
-          Size="230.4,41.6"
-          Id="Package\Carga de dados de Empresas\Classificar código natural do DW"
-          TopLeft="372.057143395409,329.588235005221" />
         <EdgeLayout
           Id="Package\Carga de dados de Empresas.Paths[Saída de Coluna Derivada]"
           TopLeft="129.857142724857,251.129411581045">
@@ -1775,31 +4115,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Carga de dados de Empresas.Paths[Saída de Origem OLE DB1]"
-          TopLeft="413.285714603504,125.717646985091">
+          Id="Package\Carga de dados de Empresas.Paths[Saída da Junção de Mesclagem]"
+          TopLeft="370.710204356414,487.3142853236">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="73.9714287919049,203.87058802013"
+              EndConnector="0,55.5428572079712"
               Start="0,0"
-              End="73.9714287919049,196.37058802013">
+              End="0,48.0428572079712">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,97.9352940100648" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,97.9352940100648"
-                    Point2="0,101.935294010065"
-                    Point3="4,101.935294010065" />
-                  <mssgle:LineSegment
-                    End="69.9714287919049,101.935294010065" />
-                  <mssgle:CubicBezierSegment
-                    Point1="69.9714287919049,101.935294010065"
-                    Point2="73.9714287919049,101.935294010065"
-                    Point3="73.9714287919049,105.935294010065" />
-                  <mssgle:LineSegment
-                    End="73.9714287919049,196.37058802013" />
+                    End="0,48.0428572079712" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1808,42 +4136,76 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\Carga de dados de Empresas\Juntando Data Lake com DW"
-          TopLeft="262.57142892115,445.7142853236" />
         <EdgeLayout
-          Id="Package\Carga de dados de Empresas.Paths[Classificar Saída]"
-          TopLeft="216.114285896749,368.12941147849">
+          Id="Package\Carga de dados de Empresas.Paths[Não existentes]"
+          TopLeft="340.315646458344,584.457142531571">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="119.523809691067,77.5848738451097"
+              EndConnector="-102.127891330237,39.1058823663473"
               Start="0,0"
-              End="119.523809691067,70.0848738451097">
+              End="-102.127891330237,31.6058823663473">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.2073750501871" />
+                    End="0,11.8346769581767" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42.2073750501871"
-                    Point2="0,46.2073750501871"
-                    Point3="4,46.2073750501871" />
+                    Point1="0,11.8346769581767"
+                    Point2="0,15.8346769581767"
+                    Point3="-4,15.8346769581767" />
                   <mssgle:LineSegment
-                    End="115.523809691067,46.2073750501871" />
+                    End="-98.127891330237,15.8346769581767" />
                   <mssgle:CubicBezierSegment
-                    Point1="115.523809691067,46.2073750501871"
-                    Point2="119.523809691067,46.2073750501871"
-                    Point3="119.523809691067,50.2073750501871" />
+                    Point1="-98.127891330237,15.8346769581767"
+                    Point2="-102.127891330237,15.8346769581767"
+                    Point3="-102.127891330237,19.8346769581767" />
                   <mssgle:LineSegment
-                    End="119.523809691067,70.0848738451097" />
+                    End="-102.127891330237,31.6058823663473" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-83.9415237901185,20.8346769581767,65.75515625,10.1201171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de dados de Empresas.Paths[Existentes]"
+          TopLeft="402.182313125011,584.457142531571">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="109.066666803514,33.0554622787155"
+              Start="0,0"
+              End="109.066666803514,25.5554622787155">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.38475275875856" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.38475275875856"
+                    Point2="0,13.3847527587586"
+                    Point3="4,13.3847527587586" />
+                  <mssgle:LineSegment
+                    End="105.066666803514,13.3847527587586" />
+                  <mssgle:CubicBezierSegment
+                    Point1="105.066666803514,13.3847527587586"
+                    Point2="109.066666803514,13.3847527587586"
+                    Point3="109.066666803514,17.3847527587586" />
+                  <mssgle:LineSegment
+                    End="109.066666803514,25.5554622787155" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="31.720755276757,18.3847527587586,45.62515625,9.451171875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1880,110 +4242,38 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="193.6,41.6"
-          Id="Package\Carga de dados de Empresas\Separar dados de leitura"
-          TopLeft="274.448979791677,542.857142531571" />
         <EdgeLayout
-          Id="Package\Carga de dados de Empresas.Paths[Saída da Junção de Mesclagem]"
-          TopLeft="370.710204356414,487.3142853236">
+          Id="Package\Carga de dados de Empresas.Paths[Classificar Saída]"
+          TopLeft="216.114285896749,368.12941147849">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55.5428572079712"
+              EndConnector="119.523809691067,77.5848738451097"
               Start="0,0"
-              End="0,48.0428572079712">
+              End="119.523809691067,70.0848738451097">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.0428572079712" />
+                    End="0,42.2073750501871" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.2073750501871"
+                    Point2="0,46.2073750501871"
+                    Point3="4,46.2073750501871" />
+                  <mssgle:LineSegment
+                    End="115.523809691067,46.2073750501871" />
+                  <mssgle:CubicBezierSegment
+                    Point1="115.523809691067,46.2073750501871"
+                    Point2="119.523809691067,46.2073750501871"
+                    Point3="119.523809691067,50.2073750501871" />
+                  <mssgle:LineSegment
+                    End="119.523809691067,70.0848738451097" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="225.6,41.6"
-          Id="Package\Carga de dados de Empresas\Gravando dados não existentes"
-          TopLeft="285.591837101793,627.932772793248" />
-        <EdgeLayout
-          Id="Package\Carga de dados de Empresas.Paths[Não existentes]"
-          TopLeft="371.248979791677,584.457142531571">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27.1428573101151,43.4756302616768"
-              Start="0,0"
-              End="27.1428573101151,35.9756302616768">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.7378151308384" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.7378151308384"
-                    Point2="0,21.7378151308384"
-                    Point3="4,21.7378151308384" />
-                  <mssgle:LineSegment
-                    End="23.1428573101151,21.7378151308384" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.1428573101151,21.7378151308384"
-                    Point2="27.1428573101151,21.7378151308384"
-                    Point3="27.1428573101151,25.7378151308384" />
-                  <mssgle:LineSegment
-                    End="27.1428573101151,35.9756302616768" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-19.3061494699424,26.7378151308384,65.75515625,10.1201171875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="205.6,41.6"
-          Id="Package\Carga de dados de Empresas\Gravando dados existentes"
-          TopLeft="542.122449600836,628.43697454861" />
-        <EdgeLayout
-          Id="Package\Carga de dados de Empresas.Paths[Existentes]"
-          TopLeft="402.182313125011,584.457142531571">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="242.740136475825,43.9798320170389"
-              Start="0,0"
-              End="242.740136475825,36.4798320170389">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.8082270626371" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.8082270626371"
-                    Point2="0,17.8082270626371"
-                    Point3="4,17.8082270626371" />
-                  <mssgle:LineSegment
-                    End="238.740136475825,17.8082270626371" />
-                  <mssgle:CubicBezierSegment
-                    Point1="238.740136475825,17.8082270626371"
-                    Point2="242.740136475825,17.8082270626371"
-                    Point3="242.740136475825,21.8082270626371" />
-                  <mssgle:LineSegment
-                    End="242.740136475825,36.4798320170389" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="98.5574901129124,22.8082270626371,45.62515625,9.451171875"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2017,6 +4307,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga de dados de Empresas\Gravando dados não existentes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga de dados de Clientes\Gravação dos dados não existentes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
