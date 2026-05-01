@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDataLake"
   DTS:PackageType="5"
-  DTS:VersionBuild="121"
-  DTS:VersionGUID="{AE622897-59C0-4CA0-8979-4D5E7B63E252}">
+  DTS:VersionBuild="126"
+  DTS:VersionGUID="{8F263E86-47CB-4199-996C-72F8715D669A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -289,7 +289,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cpf"
-              DTS:DTSID="{16B9278C-9FB7-40B0-B755-997F7B8B3C2B}"
+              DTS:DTSID="{8D2136A8-4E98-42C1-99AC-75805AE2A561}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="codigo_loja"
-              DTS:DTSID="{9456B07C-2E18-4E36-A258-D5C7EF1CFAB5}"
+              DTS:DTSID="{48BB3C92-8C21-45FD-BB60-04D21B751258}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="data"
-              DTS:DTSID="{35CFEF25-A96F-4D9B-957C-43517A37BE4F}"
+              DTS:DTSID="{7866FB4F-EB7B-45AF-AF7E-1357DB8D8D0F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="numero"
-              DTS:DTSID="{C8467055-C0B2-40D9-88AD-3C60CBCC0B7E}"
+              DTS:DTSID="{A66D29EB-BDD0-4D6E-B5A7-5B20BA3185F9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -14623,7 +14623,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14645,7 +14647,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14679,7 +14683,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14701,7 +14707,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14783,7 +14791,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14805,7 +14815,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14827,7 +14839,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14897,7 +14911,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14989,13 +15005,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Comando OLE DB"
+          TopLeft="213.3,411.9" />
+        <NodeLayout
           Size="252,41.6"
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Conexão com arquivo COMPRAS CSV"
           TopLeft="168.1,5.49999999999995" />
         <NodeLayout
+          Size="219.2,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Gravação na tabela COMPRAS"
+          TopLeft="184.5,310.3" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Comando OLE DB 1"
+          TopLeft="435.5,411.9" />
+        <NodeLayout
           Size="241.6,41.6"
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Acrescentar colunas de Metadados"
           TopLeft="173.3,107.1" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Inserir Destino"
+          TopLeft="5.50000000000009,411.9" />
+        <NodeLayout
+          Size="252.8,41.6"
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Conversão do arquivo COMPRAS CSV"
+          TopLeft="167.7,208.7" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Origem de Arquivo Simples]"
           TopLeft="294.1,47.1">
@@ -15015,39 +15051,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="252.8,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Conversão do arquivo COMPRAS CSV"
-          TopLeft="167.7,208.7" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Coluna Derivada]"
-          TopLeft="294.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="219.2,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Gravação na tabela COMPRAS"
-          TopLeft="184.5,310.3" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Conversão de Dados]"
           TopLeft="294.1,250.3">
@@ -15067,53 +15075,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Inserir Destino"
-          TopLeft="5.50000000000009,411.9" />
         <EdgeLayout
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Nova Saída]"
-          TopLeft="241.3,351.9">
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Coluna Derivada]"
+          TopLeft="294.1,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-162.2,60"
+              EndConnector="0,60.0000000000001"
               Start="0,0"
-              End="-162.2,52.5">
+              End="0,52.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.4807692307692" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4807692307692"
-                    Point2="0,20.4807692307692"
-                    Point3="-4,20.4807692307692" />
-                  <mssgle:LineSegment
-                    End="-158.2,20.4807692307692" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-158.2,20.4807692307692"
-                    Point2="-162.2,20.4807692307692"
-                    Point3="-162.2,24.4807692307692" />
-                  <mssgle:LineSegment
-                    End="-162.2,52.5" />
+                    End="0,52.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-106.093359375,25.4807692307692,49.98671875,10.3349609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Comando OLE DB"
-          TopLeft="213.3,411.9" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Atualizações de Membro Inferido]"
           TopLeft="294.1,351.9">
@@ -15138,10 +15128,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras\Comando OLE DB 1"
-          TopLeft="435.5,411.9" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Saída de Atualizações de Atributo de Alteração]"
           TopLeft="346.9,351.9">
@@ -15175,6 +15161,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-16.2626953125,25.4807692307692,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de COMPRAS\Carga de Compras.Paths[Nova Saída]"
+          TopLeft="241.3,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-162.2,60"
+              Start="0,0"
+              End="-162.2,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4807692307692" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4807692307692"
+                    Point2="0,20.4807692307692"
+                    Point3="-4,20.4807692307692" />
+                  <mssgle:LineSegment
+                    End="-158.2,20.4807692307692" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-158.2,20.4807692307692"
+                    Point2="-162.2,20.4807692307692"
+                    Point3="-162.2,24.4807692307692" />
+                  <mssgle:LineSegment
+                    End="-162.2,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.093359375,25.4807692307692,49.98671875,10.3349609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15249,6 +15271,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Comando OLE DB"
+          TopLeft="213.3,411.9" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Inserir Destino"
+          TopLeft="5.50000000000009,411.9" />
+        <NodeLayout
+          Size="196.8,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Gravação na tabela ITEM"
+          TopLeft="195.7,310.3" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Comando OLE DB 1"
+          TopLeft="435.5,411.9" />
+        <NodeLayout
           Size="205.6,41.6"
           Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Origem de Arquivo Simples"
           TopLeft="191.3,5.49999999999995" />
@@ -15256,84 +15294,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Size="241.6,41.6"
           Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Acrescentar colunas de Metadados"
           TopLeft="173.3,107.1" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="294.1,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="253.6,41.6"
           Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Conversão para o arquivo ITENS CSV"
           TopLeft="167.3,208.7" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Coluna Derivada]"
-          TopLeft="294.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="196.8,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Gravação na tabela ITEM"
-          TopLeft="195.7,310.3" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Conversão de Dados]"
-          TopLeft="294.1,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Inserir Destino"
-          TopLeft="5.50000000000009,411.9" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Nova Saída]"
           TopLeft="246.9,351.9">
@@ -15370,10 +15334,72 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Comando OLE DB"
-          TopLeft="213.3,411.9" />
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="294.1,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Conversão de Dados]"
+          TopLeft="294.1,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Coluna Derivada]"
+          TopLeft="294.1,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Atualizações de Membro Inferido]"
           TopLeft="294.1,351.9">
@@ -15398,10 +15424,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas\Comando OLE DB 1"
-          TopLeft="435.5,411.9" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de ITENS\Carga de Itens de Notas.Paths[Saída de Atualizações de Atributo de Alteração]"
           TopLeft="341.3,351.9">
@@ -15519,9 +15541,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Dimensão de Alteração Lenta"
           TopLeft="186.1,310.3" />
         <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Comando OLE DB"
+          TopLeft="213.3,411.9" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Inserir Destino"
+          TopLeft="5.50000000000009,411.9" />
+        <NodeLayout
           Size="244.8,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Conversão das colunas NOTAS CSV"
           TopLeft="171.7,208.7" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Comando OLE DB 1"
+          TopLeft="435.5,411.9" />
         <NodeLayout
           Size="243.2,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Acrescentar Colunas do Metadados"
@@ -15530,28 +15564,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Size="248,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Conexão com o arquivo NOTAS CSV"
           TopLeft="170.1,5.49999999999995" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="294.1,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Conversão de Dados]"
           TopLeft="294.1,250.3">
@@ -15596,10 +15608,66 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Inserir Destino"
-          TopLeft="5.50000000000009,411.9" />
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="294.1,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="346.1,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175,60"
+              Start="0,0"
+              End="175,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4878048780488"
+                    Point2="0,20.4878048780488"
+                    Point3="4,20.4878048780488" />
+                  <mssgle:LineSegment
+                    End="171,20.4878048780488" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171,20.4878048780488"
+                    Point2="175,20.4878048780488"
+                    Point3="175,24.4878048780488" />
+                  <mssgle:LineSegment
+                    End="175,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Nova Saída]"
           TopLeft="242.1,351.9">
@@ -15636,72 +15704,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Comando OLE DB"
-          TopLeft="213.3,411.9" />
         <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="294.1,351.9">
+          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="294.1,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,60.0000000000001"
               Start="0,0"
-              End="0,52.5">
+              End="0,52.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,52.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Comando OLE DB 1"
-          TopLeft="435.5,411.9" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="346.1,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="175,60"
-              Start="0,0"
-              End="175,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4878048780488"
-                    Point2="0,20.4878048780488"
-                    Point3="4,20.4878048780488" />
-                  <mssgle:LineSegment
-                    End="171,20.4878048780488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="171,20.4878048780488"
-                    Point2="175,20.4878048780488"
-                    Point3="175,24.4878048780488" />
-                  <mssgle:LineSegment
-                    End="175,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.8626953125,25.4878048780488,206.725390625,12.2490234375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -15775,123 +15797,92 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Verificando diretório IN de NOTAS\Carga de Notas Fiscais\Inserir Destino">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Verificando diretório IN de NOTAS\Carga Tempo">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="253.6,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Gravação dos dados na tabela tempo"
+          TopLeft="167.3,411.9" />
+        <NodeLayout
           Size="248,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Conexão com o arquivo NOTAS CSV"
           TopLeft="170.1,5.49999999999995" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Comando OLE DB 1"
+          TopLeft="435.5,513.5" />
+        <NodeLayout
+          Size="308,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Dia no formato AAAAMMDD e coluna de controle"
+          TopLeft="140.1,208.7" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Comando OLE DB"
+          TopLeft="213.3,513.5" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Inserir Destino"
+          TopLeft="5.50000000000009,513.5" />
+        <NodeLayout
+          Size="247.2,41.6"
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Conversão das colunas para TEMPO"
+          TopLeft="170.5,310.3" />
         <NodeLayout
           Size="212,41.6"
           Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Buscar apenas lista de datas"
           TopLeft="188.1,107.1" />
         <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="294.1,47.1">
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="355.5,453.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="165.6,60.0000000000001"
               Start="0,0"
-              End="0,52.5">
+              End="165.6,52.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,16.4162330905307" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4162330905307"
+                    Point2="0,20.4162330905307"
+                    Point3="4,20.4162330905307" />
+                  <mssgle:LineSegment
+                    End="161.6,20.4162330905307" />
+                  <mssgle:CubicBezierSegment
+                    Point1="161.6,20.4162330905307"
+                    Point2="165.6,20.4162330905307"
+                    Point3="165.6,24.4162330905307" />
+                  <mssgle:LineSegment
+                    End="165.6,52.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-20.5626953125,25.4162330905307,206.725390625,12.2490234375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="308,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Dia no formato AAAAMMDD e coluna de controle"
-          TopLeft="140.1,208.7" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Classificar Saída]"
-          TopLeft="294.1,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="247.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Conversão das colunas para TEMPO"
-          TopLeft="170.5,310.3" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Coluna Derivada]"
-          TopLeft="294.1,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="253.6,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Gravação dos dados na tabela tempo"
-          TopLeft="167.3,411.9" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Conversão de Dados]"
-          TopLeft="294.1,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Inserir Destino"
-          TopLeft="5.50000000000009,513.5" />
         <EdgeLayout
           Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Nova Saída]"
           TopLeft="232.7,453.5">
@@ -15928,10 +15919,102 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Comando OLE DB"
-          TopLeft="213.3,513.5" />
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Classificar Saída]"
+          TopLeft="294.1,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="294.1,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Conversão de Dados]"
+          TopLeft="294.1,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Coluna Derivada]"
+          TopLeft="294.1,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Atualizações de Membro Inferido]"
           TopLeft="294.1,453.5">
@@ -15953,46 +16036,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo\Comando OLE DB 1"
-          TopLeft="435.5,513.5" />
-        <EdgeLayout
-          Id="Package\Verificando diretório IN de NOTAS\Carga Tempo.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="355.5,453.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="165.6,60.0000000000001"
-              Start="0,0"
-              End="165.6,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4162330905307" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4162330905307"
-                    Point2="0,20.4162330905307"
-                    Point3="4,20.4162330905307" />
-                  <mssgle:LineSegment
-                    End="161.6,20.4162330905307" />
-                  <mssgle:CubicBezierSegment
-                    Point1="161.6,20.4162330905307"
-                    Point2="165.6,20.4162330905307"
-                    Point3="165.6,24.4162330905307" />
-                  <mssgle:LineSegment
-                    End="165.6,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-20.5626953125,25.4162330905307,206.725390625,12.2490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
