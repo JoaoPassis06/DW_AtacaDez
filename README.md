@@ -5,7 +5,9 @@ Este projeto apresenta a implementação completa de um pipeline de dados para o
 ---
 🛠️ Tecnologias e Ferramentas
 
-<img src="https://skillicons.dev/icons?i=visualstudio,notion,sqlserver," height="38"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=visualstudio,notion,mssql&theme=dark&view=grid&perline=3" height="40" />
+</p>
 ---
 
 ## 🏗️ O Desafio de Dados
