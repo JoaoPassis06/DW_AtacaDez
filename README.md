@@ -5,7 +5,9 @@ Este projeto apresenta a implementação completa de um pipeline de dados para o
 ---
 🛠️ Tecnologias e Ferramentas
 
-  <img src="https://skillicons.dev/icons?i=visualstudio,notion&theme=dark&view=grid&perline=3" height="40" />  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft+sql+server&logoColor=white" />
+  <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual+studio&logoColor=white" />
+  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft+sql+server&logoColor=white" />
   
 ---
 
