@@ -1,6 +1,6 @@
 # 🛒 Business Intelligence & Data Warehouse: AtacaDez Case
 
-![Banner AtacaDez](https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop)
+![Banner Minimalista de Dados](https://images.unsplash.com/photo-1551288049-bbbda546697c?q=80&w=1200&h=300&auto=format&fit=crop)
 
 Este projeto apresenta a implementação completa de um pipeline de dados para o setor varejista. O foco principal foi a transformação de dados operacionais fragmentados em um **Data Warehouse de alta performance**, permitindo análises granulares de rentabilidade e ticket médio.
 
@@ -40,7 +40,6 @@ Diferente da documentação estática, este repositório está organizado para e
 O Warehouse foi otimizado para extrair métricas automáticas como:
 * **Rentabilidade:** $$\left( \frac{Lucro}{ValorVenda} \right) \times 100$$.
 * **Custo de Venda (COGS):** Baseado no preço unitário de compra capturado no input.
-* **Visão 360 do Cliente:** Análise por Segmento, Região e Estado.
 
 ---
 
