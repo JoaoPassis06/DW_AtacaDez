@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">BOSULIYA</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1G8UXbHqXkCdsTKcsc1S9QAAAAACAAAAAAAQZgAAAAEAACAAAAA/nl+Z9baEq2jk/4XM+GN/omN0FVY1K9CJFunKP4yooQAAAAAOgAAAAAIAACAAAADguKIvSd3NaFFmpB9wejHUMjge9dMScct5Jz8eB4SZmZAAAADwMGpnXyT7NTNoo8h/2laBAXoRsT/0v1Gdz+qV65yAjgIlAZEXNPnyNe1Z8SjbyUlj+h5coIJ8K8v3S8afLTzoWM4Z49uNGYN6VylYcGvIfG/lXd86GGNbHDczcXAVoQY66TlaLaudhcS7et9zBnVyV2F7q4QqRpzIdkz8+NVVuN4EPEdhEMb00w44p/7rGsZAAAAAbqBtDzmiKdHrrQgh4rqdfuTI3QFpf1XWuyojASZjvzgy+BP8QKqH+rUYSfv6pe7XEsLTbj6x6zP0eZgZ+bAt6w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1G8UXbHqXkCdsTKcsc1S9QAAAAACAAAAAAAQZgAAAAEAACAAAABX2bXqkawrytgmK9z6GmmahpYLTe8cErX23kXmP5VYKgAAAAAOgAAAAAIAACAAAABVXfAuDW7NpCBR/pWBlolzPvQyyirX5rkkzpOYoL7mmpAAAAATOVL6MOTQW1iow6weySWqBmfgPv52tETVq/EsZUJSmTaoPzvEixw9gBb5fV8nud4yVN1xBsFxmHbuWaE/RxnNh1iFB6ggNpX/bon21MXwpSNMfp4zDIc+wHxjMipNxKaFUJ5Fgxw/VGP5dW8bDnP6B3k+HHHICmY/FVmj0LYtI2Dz0v9pqthLu3zCalyVzVZAAAAAxQgRrIAtk+sRYuZRVJuTJ4YLENGjJYdO8iMjn7GtU+9p/VU7LhSYu6S5nVkuEL7B/Pj6HFwcgaP3XQjR/rA8kQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -44,10 +44,10 @@
                 <SSIS:Property SSIS:Name="Name">CargaDataLake</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">126</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">127</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8F263E86-47CB-4199-996C-72F8715D669A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FFE33C1C-901D-46B9-97AC-8EC5F3CC0FAB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1651,8 +1651,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1842,10 +1840,10 @@
                 <SSIS:Property SSIS:Name="Name">CargaDataWarehouse</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">48</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">108</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{29592876-53A1-470F-AC4F-AD223E68EB7F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BCDAA70A-C8B3-4888-83DF-10D118078306}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

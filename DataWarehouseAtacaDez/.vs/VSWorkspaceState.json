@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CargaDataWarehouse",
+    "\\CriaçãoDataLake"
   ],
+  "SelectedNode": "\\CargaDataWarehouse",
   "PreviewInSolutionExplorer": false
 }
