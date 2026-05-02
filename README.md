@@ -36,8 +36,8 @@ Diferente da documentação estática, este repositório está organizado para e
 ## 📈 Inteligência de Negócio (KPIs Implementados)
 
 O Warehouse foi otimizado para extrair métricas automáticas como:
-* **Rentabilidade:** $$\left( \frac{Lucro}{ValorVenda} \right) \times 100$$.
-* **Custo de Venda (COGS):** Baseado no preço unitário de compra capturado no input.
+* **Rentabilidade:** $$\left( \frac{Lucro}{Valor_Venda} \right) \times 100$$.
+* **Custo de Venda:** Baseado no preço unitário de compra capturado no input.
 
 ---
 
