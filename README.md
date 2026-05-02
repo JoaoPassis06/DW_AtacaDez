@@ -3,6 +3,10 @@
 Este projeto apresenta a implementação completa de um pipeline de dados para o setor varejista. O foco principal foi a transformação de dados operacionais fragmentados em um **Data Warehouse de alta performance**, permitindo análises granulares de rentabilidade e ticket médio.
 
 ---
+🛠️ Tecnologias e Ferramentas
+
+<img src="https://skillicons.dev/icons?i=visualstudio,notion,sqlserver," height="38"/>
+---
 
 ## 🏗️ O Desafio de Dados
 A rede **AtacaDez** possuía dados isolados em formatos JSON, XML, CSV e XLSX. O objetivo técnico deste projeto foi centralizar essas fontes através de uma arquitetura de camadas:
@@ -36,7 +40,7 @@ Diferente da documentação estática, este repositório está organizado para e
 ## 📈 Inteligência de Negócio (KPIs Implementados)
 
 O Warehouse foi otimizado para extrair métricas automáticas como:
-* **Rentabilidade:** $$\left( \frac{Lucro}{Valor_Venda} \right) \times 100$$.
+* **Rentabilidade:** $$\left( \frac{Lucro}{Valor Venda} \right) \times 100$$.
 * **Custo de Venda:** Baseado no preço unitário de compra capturado no input.
 
 ---
