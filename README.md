@@ -1,6 +1,4 @@
-# 🛒 Business Intelligence & Data Warehouse: AtacaDez Case
-
-![Banner Minimalista de Dados](https://images.unsplash.com/photo-1551288049-bbbda546697c?q=80&w=1200&h=300&auto=format&fit=crop)
+# 🛒 Business Intelligence & Data Warehouse: AtacaDez
 
 Este projeto apresenta a implementação completa de um pipeline de dados para o setor varejista. O foco principal foi a transformação de dados operacionais fragmentados em um **Data Warehouse de alta performance**, permitindo análises granulares de rentabilidade e ticket médio.
 
